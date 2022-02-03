@@ -5,7 +5,7 @@ import './sign-in.scss';
 
 
 export interface ISignIn {    
-    logo?: string;  
+    logoSrc?: string;  
     title?: string;
     emailInputPlaceholder?: string;
     passwordInputPlaceholder?: string;
@@ -14,7 +14,7 @@ export interface ISignIn {
 }
 
 export const SignIn: React.FC<ISignIn> = ({     
-    logo = defaultLogo,
+    logoSrc = defaultLogo,
     title = 'Sign In',
     emailInputPlaceholder = 'Email',
     passwordInputPlaceholder = 'Password',
@@ -25,7 +25,7 @@ export const SignIn: React.FC<ISignIn> = ({
     return (
         <Card className='Card' elevation={Elevation.FOUR}>
             <div className='Header'>
-                <img className='Logo' src={logo} />
+                <img className='Logo' src={logoSrc} />
                 <H1 className='Title'>{title}</H1>
             </div>
             <InputGroup
