@@ -5,7 +5,7 @@ import { SignIn } from './../../../components/sign-in/sign-in';
 
 export default createDemo({
     name: 'SignIn',
-    demo: () => <SignIn passwordInputPlaceholder={'gfgf'}></SignIn>,
+    demo: () => <SignIn></SignIn>,
     environmentProps: {
         windowHeight: 573,
         windowBackgroundColor: '#ffffff',
