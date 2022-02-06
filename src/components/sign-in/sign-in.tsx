@@ -1,6 +1,6 @@
 import React from 'react';
 import {Elevation, Button, Card, InputGroup, H1} from "@blueprintjs/core";
-import defaultLogo from './logo.svg';
+import defaultLogo from './assets/logo.svg';
 import './sign-in.scss';
 
 

@@ -7,7 +7,7 @@ export default createDemo({
     name: 'SignIn',
     demo: () => <SignIn></SignIn>,
     environmentProps: {
-        windowHeight: 573,
+        windowHeight: 634,
         windowBackgroundColor: '#ffffff',
         windowWidth: 1024
     }
