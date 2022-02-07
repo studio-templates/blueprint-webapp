@@ -4,7 +4,7 @@ import defaultLogo from './assets/logo.svg';
 import './sign-in.scss';
 
 
-export interface ISignIn {    
+export interface SignInProps {    
     logoSrc?: string;  
     title?: string;
     emailInputPlaceholder?: string;
@@ -13,20 +13,21 @@ export interface ISignIn {
     submitButtonCaption?: string;
 }
 
-export const SignIn: React.FC<ISignIn> = ({     
+export const SignIn: React.FC<SignInProps> = ({     
     logoSrc = defaultLogo,
     title = 'Sign In',
     emailInputPlaceholder = 'Email',
     passwordInputPlaceholder = 'Password',
     forgotLabel = 'Forgot your password?',
-    submitButtonCaption = 'Sign In'
+    submitButtonCaption = 'Sign In',
+    ...props
 }) => {
 
     return (
-        <Card className='Card' elevation={Elevation.FOUR}>
-            <div className='Header'>
-                <img className='Logo' src={logoSrc} />
-                <H1 className='Title'>{title}</H1>
+        <Card className='card' elevation={Elevation.FOUR}>
+            <div className='card header'>
+                <img className='logo' src={logoSrc} />
+                <H1>{title}</H1>
             </div>
             <InputGroup
                 type='email'
@@ -42,9 +43,9 @@ export const SignIn: React.FC<ISignIn> = ({
                 placeholder = {passwordInputPlaceholder}  
                 id='pass'             
             />
-            <div className='SubmitArea'>
+            <div className='card submit'>
             {forgotLabel}
-                <Button text={submitButtonCaption} className='Button' intent='primary' type="submit" />
+                <Button text={submitButtonCaption} className='btn' intent='primary' type="submit" />
             </div>
         </Card>
     )
