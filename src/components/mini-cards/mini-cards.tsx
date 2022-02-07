@@ -26,7 +26,7 @@ export const MiniCards: React.FC<MiniCardsProps> = ({
                 <span/><H3 className='title'>Software Update Installation...</H3>
             </Card>            
             <Card className='card' elevation={Elevation.THREE}>
-                <ProgressBar animate='false' intent='primary' value='0.65'/>
+                <ProgressBar animate={false} intent='primary' value={0.65}/>
                 <span/><Button className='btn' intent='primary' icon="cross" ></Button>
             </Card>
             <Callout title='Successfully Updated' icon='automatic-updates' intent='success'>
