@@ -6,5 +6,5 @@ export interface NewComponentProps {
 }
 
 export const NewComponent: React.FC<NewComponentProps> = ({ className }) => {
-    return <div className={styles["new-component"]}>NewComponent</div>;
+    return <div className={styles.root}>NewComponent</div>;
 };
