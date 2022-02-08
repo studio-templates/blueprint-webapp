@@ -4,4 +4,9 @@ module.exports = {
         componentsPath: './src/components',
         templatesPath: './src/component-templates',
     },
+    sassCompilation: {
+        modules: {
+          include: ["**/*.module.scss"],
+        },
+    },
 }
