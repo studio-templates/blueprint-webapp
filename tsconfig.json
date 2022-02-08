@@ -16,5 +16,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "_wcs"]
+  "include": ["src", "_wcs", "a.js"]
 }

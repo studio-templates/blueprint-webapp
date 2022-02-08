@@ -1,7 +1,7 @@
 module.exports = {
-    simulationGlobalSetup: './_wcs/simulation-global-setup.ts',
-    newComponent: {
-        componentsPath: './src/components',
-        templatesPath: './src/component-templates',
-    },
-}
+  simulationGlobalSetup: "./_wcs/board-global-setup.ts",
+  newComponent: {
+    componentsPath: "./src/components",
+    templatesPath: "./src/component-templates",
+  },
+};
