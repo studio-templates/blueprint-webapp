@@ -4,7 +4,7 @@ import { createDemo } from '@wixc3/react-simulation';
 import { SignIn } from './../../../components/sign-in/sign-in';
 
 export default createDemo({
-    name: 'SignIn',
+    name: 'Example of a sign-in panel',
     demo: () => <SignIn></SignIn>,
     environmentProps: {
         windowHeight: 634,

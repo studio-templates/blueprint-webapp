@@ -1,0 +1,68 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Nunito+Sans:wght@200&family=Playfair+Display&display=swap');
+// Styles
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #d8b6b6;
+    
+
+    &.wrapper{   
+        border-radius: 24px;
+        overflow: hidden;
+        min-width: 280px;
+        width: 320px;        
+        padding: 0;
+    }
+    
+    &.body {         
+        padding: 1.5rem; 
+        box-shadow: none; 
+    }
+
+    &.promo {         
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center;
+        box-shadow: none;        
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    img{
+        width: 100%;
+        height: 100%; 
+        object-position: top;
+        object-fit: cover;
+        max-height: 220px; 
+        flex-basis: 100px;
+    }
+}
+
+.typo {    
+    margin-bottom: 1rem;
+    
+    &.title{
+        font-family: 'Playfair Display',  serif;
+        color: rgb(78, 44, 44); 
+    }
+
+    &.desc{
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: justify;
+        color: rgba(78, 44, 44, 0.5); 
+    }
+
+    &.promo{
+        font-family: 'Libre Baskerville', serif;
+        color: rgb(61, 19, 19); 
+
+        &.email{            
+            color: rgba(61, 19, 19, 0.5); 
+        }
+    }
+}
+
+
+
+

@@ -4,32 +4,34 @@
 // Styles
 .card {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 2rem;
-    border-radius: 12px;
-    font-family: 'Lato',  sans-serif; 
-    background-color: #fafafa;
-    min-width: 280px;
-    
-    &.header {   
-        padding: 0;
-        gap: 0;
+    flex-direction: column;     
+    background-color: #fafafa; 
+    font-family: 'Lato',  sans-serif;  
+    padding: 0;
+    gap: 0;  
+
+    &.wrapper{   
+        border-radius: 12px;
+        min-width: 280px;
+        width: 320px; 
+        padding: 2rem;       
+        gap: 1rem;
+    }
+
+    &.header{
+        align-items: flex-start; 
     }
 
     &.submit {
         flex-direction: row;
         justify-content: space-between;  
-        padding: 0; 
-        margin-top: 3rem;
+        margin-top: 3rem; 
     }
 }
 
 .btn {
     border: none;
     border-radius: 2rem;
-    box-shadow: none !important;
     min-width: 5rem;
     font-size: 1em;
     padding: 0.5rem;

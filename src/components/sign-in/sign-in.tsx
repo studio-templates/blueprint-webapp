@@ -24,7 +24,7 @@ export const SignIn: React.FC<SignInProps> = ({
 }) => {
 
     return (
-        <Card className='card' elevation={Elevation.FOUR}>
+        <Card className='card wrapper' elevation={Elevation.FOUR}>
             <div className='card header'>
                 <img className='logo' src={logoSrc} />
                 <H1>{title}</H1>
