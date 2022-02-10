@@ -2,7 +2,7 @@
 import React from 'react';
 import { createBoard } from '@wixc3/react-board';
 import { GiftCard } from '../../../components/gift-card/gift-card';
-import img1 from '../../../components/gift-card/assets/img-0.jpg';
+import img1 from '../../../components/gift-card/assets/img-2.jpg';
 import styles from './gift-card.board.module.scss';
 
 export default createBoard({
