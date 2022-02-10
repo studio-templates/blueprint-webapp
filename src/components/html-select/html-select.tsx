@@ -1,3 +1,4 @@
+import './html-select.scss'
 import { HTMLSelect as BluePrint_HTMLSelect } from '@blueprintjs/core'
 
 // We imported this 3rd party component from Blueprint in this way for demo purposes.
