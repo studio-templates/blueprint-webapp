@@ -5,5 +5,5 @@ import { CircleIconButton } from '../../../src/components/CircleIconButton/Circl
 
 export default createDemo({
     name: 'CircleIconButton',
-    demo: () => <CircleIconButton icon="heart"/>
+    demo: () => <CircleIconButton icon="heart" />
 });

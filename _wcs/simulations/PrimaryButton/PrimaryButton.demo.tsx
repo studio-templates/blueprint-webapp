@@ -5,5 +5,5 @@ import { PrimaryButton } from '../../../src/components/PrimaryButton/PrimaryButt
 
 export default createDemo({
     name: 'PrimaryButton',
-    demo: () => <PrimaryButton text="reawreawr World"/>
+    demo: () => <PrimaryButton text="kokokoko" />
 });
