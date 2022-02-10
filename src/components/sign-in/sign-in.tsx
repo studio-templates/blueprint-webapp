@@ -24,8 +24,8 @@ export const SignIn: React.FC<SignInProps> = ({
 }) => {
 
     return (
-        <Card className={'${styles.card} ${styles.wrapper}'} elevation={Elevation.FOUR}>
-            <div className={'${styles.card} ${styles.header}'}>
+        <Card className={`${styles.card} ${styles.wrapper}`} elevation={Elevation.FOUR}>
+            <div className={`${styles.card} ${styles.header}`}>
                 <img className={styles.logo} src={logoSrc} />
                 <H1>{title}</H1>
             </div>
@@ -43,7 +43,7 @@ export const SignIn: React.FC<SignInProps> = ({
                 placeholder = {passwordInputPlaceholder}  
                 id='pass'             
             />
-            <div className={'${styles.card} ${styles.submit}'}>
+            <div className={`${styles.card} ${styles.submit}`}>
             {forgotLabel}
                 <Button text={submitButtonCaption} className={styles.btn} intent='primary' type="submit" />
             </div>

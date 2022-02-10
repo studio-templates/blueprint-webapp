@@ -1,11 +1,11 @@
 
 import React from 'react';
-import { createDemo } from '@wixc3/react-simulation';
+import { createBoard } from '@wixc3/react-board';
 import { SignIn } from './../../../components/sign-in/sign-in';
 
-export default createDemo({
+export default createBoard({
     name: 'Example of a sign-in panel',
-    demo: () => <SignIn></SignIn>,
+    Board: () => <SignIn></SignIn>,
     environmentProps: {
         windowHeight: 634,
         windowBackgroundColor: '#ffffff',

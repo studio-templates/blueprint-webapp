@@ -14,17 +14,17 @@ export const GiftCard: React.FC<GiftCardProps> = ({
 }) => {
 
     return (
-        <Card className={'${styles.card} ${styles.wrapper}'} elevation={Elevation.FOUR}>
+        <Card className={`${styles.card} ${styles.wrapper}`} elevation={Elevation.FOUR}>
             <img src={imgSrc} /> 
-            <Card className={'${styles.card} ${styles.body}'}>
-                <H1 className={'${styles.typo} ${styles.title}'}>LASHES & HAIR EXTENTIONS</H1>
-                <H5 className={'${styles.typo} ${styles.desc}'}>
+            <Card className={`${styles.card} ${styles.body}`}>
+                <H1 className={`${styles.typo} ${styles.title}`}>LASHES & HAIR EXTENTIONS</H1>
+                <H5 className={`${styles.typo} ${styles.desc}`}>
                     Donec faucibus, ante ut ultrices commodo, magna ex maximus, sodales neque dolor vitae arcu. 
                     Nam euismod, neque quis laoreet interdum. Sed magna est, dictum at faucibus. 
                 </H5>
-                <Card className={'${styles.card} ${styles.promo}'}>
-                    <H6 className={'${styles.typo} ${styles.promo} ${styles.email}'}>EMAIL | <br/> INFO@MYSITE.COM</H6>
-                    <H1 className={'${styles.typo} ${styles.promo}'}>$50</H1>
+                <Card className={`${styles.card} ${styles.promo}`}>
+                    <H6 className={`${styles.typo} ${styles.promo} ${styles.email}`}>EMAIL | <br/> INFO@MYSITE.COM</H6>
+                    <H1 className={`${styles.typo} ${styles.promo}`}>$50</H1>
                 </Card>                
             </Card>
         </Card>
