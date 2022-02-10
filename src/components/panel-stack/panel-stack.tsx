@@ -1,4 +1,3 @@
-import "./panel-stack.scss"
 import { PanelStack2 as BluePrint_PanelStack } from '@blueprintjs/core'
 
 // We imported this 3rd party component from Blueprint in this way for demo purposes.
