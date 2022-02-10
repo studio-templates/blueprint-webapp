@@ -1,7 +1,7 @@
 import React from 'react';
 import {Elevation, Button, Card, InputGroup, H1} from "@blueprintjs/core";
 import defaultLogo from './assets/logo.svg';
-import './sign-in.scss';
+import styles from './sign-in.module.scss';
 
 
 export interface SignInProps {    
@@ -24,9 +24,9 @@ export const SignIn: React.FC<SignInProps> = ({
 }) => {
 
     return (
-        <Card className='card wrapper' elevation={Elevation.FOUR}>
-            <div className='card header'>
-                <img className='logo' src={logoSrc} />
+        <Card className={'${styles.card} ${styles.wrapper}'} elevation={Elevation.FOUR}>
+            <div className={'${styles.card} ${styles.header}'}>
+                <img className={styles.logo} src={logoSrc} />
                 <H1>{title}</H1>
             </div>
             <InputGroup
@@ -43,9 +43,9 @@ export const SignIn: React.FC<SignInProps> = ({
                 placeholder = {passwordInputPlaceholder}  
                 id='pass'             
             />
-            <div className='card submit'>
+            <div className={'${styles.card} ${styles.submit}'}>
             {forgotLabel}
-                <Button text={submitButtonCaption} className='btn' intent='primary' type="submit" />
+                <Button text={submitButtonCaption} className={styles.btn} intent='primary' type="submit" />
             </div>
         </Card>
     )
