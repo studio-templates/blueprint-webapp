@@ -1,0 +1,39 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+// Styles
+.wrapper{
+    display: grid;
+    gap: 1.75rem;  
+    padding: 2rem;  
+    max-width: 600px;
+}
+
+.card {
+    display: flex; 
+    gap: 0.75rem;
+    align-items: center;
+    border-radius: 22px; 
+    background-color: #fafafa;    
+    min-width: 420px;
+}
+
+.title {
+    font-family: 'Roboto',  sans-serif;
+    color: rgb(55, 31, 31);
+    margin: 0;
+    
+    &.sub{
+        font-family: sans-serif;
+        color: rgba(31,31,55,0.5); 
+    }
+}
+
+.btn {    
+    border-radius: 50%;   
+    cursor: pointer; 
+}
+
+.logo {
+    height: 7rem;
+}
