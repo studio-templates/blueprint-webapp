@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { createBoard } from '@wixc3/react-board';
-import { SignIn } from './../../../components/sign-in/sign-in';
+import { SignIn } from '../../../src/components/sign-in/sign-in';
 
 export default createBoard({
     name: 'Example of a sign-in panel',
