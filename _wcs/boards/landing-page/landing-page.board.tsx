@@ -8,6 +8,6 @@ export default createBoard({
     Board: () => <LandingPage />,
     environmentProps: {
         windowWidth: 1756,
-        windowHeight: 1080,
+        windowHeight: 1080
     }
 });
