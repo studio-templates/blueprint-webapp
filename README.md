@@ -8,6 +8,5 @@ Install the latest version of the WCS desktop application to get started. Refer 
 
 After installing the desktop application, have a look at [Cloning Projects](https://component-studio.wixanswers.com/en/article/kb37629) to see how to clone a project from WCS. Use this URL for the repo to clone: **`https://github.com/studio-templates/blueprint-webapp/`**
 
-Once you’ve cloned the project, just run the installation script when prompted.
-
+Once you’ve cloned the project, just run the installation script when prompted.  
 (see [Running Project Scripts](https://component-studio.wixanswers.com/en/article/kb37621]), and the project will be ready for you to use after you restart WCS.
