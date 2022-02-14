@@ -12,6 +12,6 @@ export default createBoard({
     }, {
         text: '3',
     }, {
-        text: '4',
+        text: '42',
     },]} />
 });
