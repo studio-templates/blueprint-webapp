@@ -35,41 +35,14 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 </div>
                 <ProductItem className={styles['product-screen']}/>
             </div> 
-            {/*divider*/}        
-            <div className={styles.divider}/>        
+           
+            <div className={styles.me}>
+                <svg viewBox="0 0 300 200" width="100%" height="100%" preserveAspectRatio="none">
+                    <path d="M 0,200 L 300,0 L 300,200 z"></path>
+                </svg> 
+            </div>
+            
         </div>
                
     )
 };
-
-/*
-
-<Card className={styles['right-col']}>
-<span className={styles['product-screen']}>
-    <ProductItem />
-</span>
-</Card>*/
-
-/*
-
-<div className={styles.content}>            
-            <div className={styles['left-col']}>
-                <div className={styles.logo}>
-                    <img className={styles['logo-image']} src="https://i.ibb.co/rt9BTyB/Screen-Shot-2022-02-09-at-17-22-11.png" />
-                    <span>Itai's Coffee</span>
-                </div>
-                <div className={styles.title}>
-                    Coffee shop in the heart of Tel-Aviv.
-                </div>
-                <div className={styles.subtitle}>
-                    Itai’s Coffe was created for those who appriciate delicious and high-quality coffe.
-                </div>
-            </div>
-            <div className={styles.right}>
-                <span className={styles['product-screen']}>
-                    <ProductItem />
-                </span>
-            </div>
-
-            <div className={styles.stripe}/>
-        </div>    */
