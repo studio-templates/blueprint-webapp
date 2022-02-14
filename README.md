@@ -1,5 +1,5 @@
 # blueprint-webapp
-This project includes a collection of [blueprint](https://blueprintjs.com) components for you to use, and for us to showcase the capabilities of Wix Component Studio (WCS).
+This project includes a collection of [blueprint](https://blueprintjs.com) components for you to use, and for us to showcase the capabilities of Wix Component Studio.
 Use this example to get a feel for how easy and fun it is to create and edit components in WCS that are based on 3rd party component libraries.
 
 ## Getting Started
