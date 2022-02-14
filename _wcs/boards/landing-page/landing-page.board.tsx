@@ -7,7 +7,7 @@ export default createBoard({
     name: 'LandindPage',
     Board: () => <LandingPage />,
     environmentProps: {
-        windowWidth: 1756,
+        windowWidth: 980,
         windowHeight: 1080,
         canvasMargin: {
             top: 1,

@@ -1,19 +1,90 @@
 import React from 'react';
-import { CircleIconButton } from '../circle-icon-button/circle-icon-button';
-import { PrimaryButton } from '../primary-button/primary-button';
-import { RadioButton } from '../radio-button/radio-button';
+import {Elevation, RadioGroup, Radio,Button, Card, Icon, H1} from "@blueprintjs/core";
+import defaultImg from './assets/peppermint.png';
 import styles from './product-item.module.scss';
-
 
 export interface ProductItemProps {    
     className?: string;
+    imgURL?: string;
 }
 
-export const ProductItem: React.FC<ProductItemProps> = ({     
+export const ProductItem: React.FC<ProductItemProps> = ({ 
+    imgURL = defaultImg,  
     ...props
 }) => {
     return (
-        <div className={styles['product-screen']}>
+        <Card className={`${styles.card} ${styles.wrapper}`} elevation={Elevation.FOUR}>             
+            <img src={imgURL} />            
+            <Card className={`${styles.card} ${styles.body}`}>                
+                <Card className={`${styles.card} ${styles.row}`}> 
+                    <p className={styles.product_name}>Peppermint Mocha</p>
+                    <p className={styles.product_price}>$28.00</p>
+                </Card>                
+                
+                    <Radio value="0" />
+                    <Radio value="1" />
+                    <Radio value="2" />
+               
+                <Card className={`${styles.card} ${styles.row}`}>
+                    <p className={styles.product_desc}>A holiday classic, our Peppermint Mocha infuses hand-pulled espresso with rich chocolate sauce.</p>                  
+                </Card>
+                <Card className={`${styles.card} ${styles.row}`}>               
+                    <button className={styles['btn-icon']} type='button'>
+                        <Icon icon="heart" color='white' size={16} />
+                    </button>
+                    <button className={styles['btn-add']} type='button'>Add to cart</button>
+                </Card>
+            </Card>
+        </Card>
+    )
+};
+
+/*<RadioGroup onChange={function(){}} selectedValue="0">
+                    <Radio value="0" />
+                    <Radio value="1" />
+                    <Radio value="2" />
+                </RadioGroup>*/
+
+
+/*
+<Card className={`${styles.card} ${styles.wrapper}`} elevation={Elevation.FOUR}>
+             <button className={styles.btn5}>Add to cart</button>
+            <img src={imgURL} />            
+            <Card className={`${styles.card} ${styles.body}`}>
+                
+                <Card className={`${styles.card} ${styles.row}`}> 
+                    <p className={styles.product_name}>Peppermint Mocha</p>
+                    <p className={styles.product_price}>$28.00</p>
+                </Card>
+                
+                <RadioGroup
+                        label="Meal Choice"
+                        onChange={function(){}}
+                        selectedValue="one"
+                    >
+                        <Radio label="Soup" value="one" />
+                        <Radio label="Salad" value="two" />
+                        <Radio label="Sandwich" value="three" />
+                </RadioGroup>
+
+                <Card className={`${styles.card} ${styles.row}`}>
+                    <p className={styles.product_desc}>A holiday classic, our Peppermint Mocha infuses hand-pulled espresso with rich chocolate sauce.</p>                  
+                </Card>
+
+                <Card className={`${styles.card} ${styles.row}`}>               
+                    <button className={`${styles.btn} ${styles.icon}`}>
+                        <Icon icon="heart" color='white' size={16} />
+                    </button>
+                    <button className={styles.btn5}>Add to cart</button>
+                </Card>
+            </Card>
+        </Card>*/
+
+//<button><Icon icon="heart" color='white' size={30} /></button>
+//<Button color='white' className={styles.btn} intent='primary' icon="heart"></Button>
+
+/*
+Card className={styles['product-screen']}>
             <div className={styles['image-container']}>
                 <img className={styles['product-image']} src="https://i.ibb.co/VMfBvZJ/Screen-Shot-2022-02-09-at-15-33-04.png" />
             </div>
@@ -46,6 +117,4 @@ export const ProductItem: React.FC<ProductItemProps> = ({
                     <PrimaryButton text='Add to cart' />
                 </div>
             </div>
-        </div>
-    )
-};
+        </Card>*/

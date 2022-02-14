@@ -24,7 +24,7 @@
     align-items: flex-start;
 
     .logo {
-        height: 20rem;
+        height: 18rem;
         margin-bottom: 2rem;        
     }
 
@@ -60,20 +60,16 @@
 
 .divider{
     --color: black;
-
     position: fixed;
     box-sizing: border-box;
-    
     border-color: var(--color); 
     border-style: solid;
     border-width: 0;
-    border-bottom-width: 75px;
-
+    border-bottom-width: 45px;
     width: 100vw;
-    height: 30%;
+    height: 33%;
     bottom: 0;   
     opacity: 0.5;
-
     svg{
         fill: var(--color);
     }
