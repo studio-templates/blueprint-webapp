@@ -3,6 +3,8 @@ This project includes a collection of [blueprint](https://blueprintjs.com) compo
 
 Use this example to get a feel for how easy and fun it is to create and edit components in WCS that are based on 3rd party component libraries.
 
+
+
 ## Getting Started
 Install the latest version of the WCS desktop application to get started. Refer [here](https://component-studio.wixanswers.com/en/article/kb32828) for prerequisites and setup instructions.
 
