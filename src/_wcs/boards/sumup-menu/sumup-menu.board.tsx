@@ -5,5 +5,9 @@ import { SumupMenu } from '../../../components/sumup-menu/sumup-menu';
 
 export default createBoard({
     name: 'SumupMenu',
-    Board: () => <SumupMenu />
+    Board: () => <SumupMenu items={[{
+        icon: 'timeline-line-chart',
+        selected: true,
+        text: 'Overview'
+    }]} />
 });
