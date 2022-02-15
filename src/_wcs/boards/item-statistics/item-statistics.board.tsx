@@ -5,5 +5,5 @@ import { ItemStatistics } from '../../../components/item-statistics/item-statist
 
 export default createBoard({
     name: 'ItemStatistics',
-    Board: () => <ItemStatistics icon="antenna" value={0.5} name="Shopping" color="orange" />
+    Board: () => <ItemStatistics icon="shopping-cart" value={0.5} name="Shopping" color="orange" />
 });

@@ -12,10 +12,10 @@ export interface ItemStatisticsProps {
     color: string;
 }
 
-export const ItemStatistics: React.FC<ItemStatisticsProps> = ({ className, name, value, icon }) => {
+export const ItemStatistics: React.FC<ItemStatisticsProps> = ({ className, name, value, icon, color }) => {
     return <div className={styles.root}>
         <div className={styles['stat-icon']}>
-            <Icon icon={icon} size={20} /></div>
+            <Icon icon={icon} size={20} color={color} /></div>
         <div className={styles['progress-bar']}>
             <ProgressBar animate={false} value={value} intent="primary" stripes={false}></ProgressBar>
             <span className={styles['stat-name']}>{name}</span>
