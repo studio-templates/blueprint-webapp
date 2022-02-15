@@ -16,7 +16,7 @@ export const ShadowCard: React.FC<ShadowCardProps> = ({
   return showCard ? (
     <div className={`${styles.root} ${styles.shadow} ${styles.spacing}`}>
       {title && <h3>{title}</h3>}
-      {children}
+      <div>{children}</div>
     </div>
   ) : (
     <>{children}</>
