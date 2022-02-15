@@ -10,3 +10,4 @@ After installing the desktop application, have a look at [Cloning Projects](http
 
 Once you’ve cloned the project, just run the installation script when prompted.  
 (see [Running Project Scripts](https://component-studio.wixanswers.com/en/article/kb37621]), and the project will be ready for you to use after you restart WCS.
+Test
