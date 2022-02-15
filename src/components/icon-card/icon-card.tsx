@@ -1,15 +1,27 @@
-import React from 'react';
-import styles from './icon-card.module.scss'
-import { Card } from '../card/card';
-import { Icon } from '../icon/Icon';
+import React from "react";
+import styles from "./icon-card.module.scss";
+import { Card } from "../card/card";
+import { Icon } from "../icon/Icon";
+import { MaybeElement } from "@blueprintjs/core";
+import { IconName } from "@blueprintjs/icons";
 
 export interface IconCardProps {
-    className?: string;
+  className?: string;
+  icon: IconName | MaybeElement;
+  color: string;
+  backgroundColor: string;
 }
 
-export const IconCard: React.FC<IconCardProps> = ({ className }) => {
-    return <div className={styles.root}>
-        <Card className={styles.IconCard}>
-            <Icon icon="shopping-cart" />
-        </Card></div>;
+export const IconCard: React.FC<IconCardProps> = ({
+  icon,
+  color,
+  backgroundColor,
+}) => {
+  return (
+    <div className={styles.root}>
+      <Card className={styles.IconCard} style={{ color, backgroundColor }}>
+        <Icon icon={icon} />
+      </Card>
+    </div>
+  );
 };
