@@ -8,6 +8,14 @@ export interface TransactionHistoryProps {
 
 export const TransactionHistory: React.FC<TransactionHistoryProps> = ({ className }) => {
     return <div className={styles.root}>
-        <Card className="rounded">TransactionHistory
-        </Card></div>;
+        <Card className="rounded">
+            <h3>Transaction History</h3>
+            <table className={styles.table}>
+                <tr>
+                    <th className={styles['table-head-col']}>Receiver</th>
+                    <th>Type</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+            </table></Card></div>;
 };

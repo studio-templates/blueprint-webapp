@@ -5,5 +5,9 @@ import { TransactionHistory } from '../../../components/transaction-history/tran
 
 export default createBoard({
     name: 'TransactionHistory',
-    Board: () => <TransactionHistory />
+    Board: () => <TransactionHistory />,
+    environmentProps: {
+        canvasHeight: 342,
+        canvasWidth: 512
+    }
 });
