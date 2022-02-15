@@ -1,0 +1,24 @@
+.root {}
+
+.receiverColumn {
+    width: 240px;
+}
+
+.typeColumn {
+    width: 120px;
+}
+
+.dateColumn {
+    width: 120px;
+}
+
+.amountColumn {
+    display: flex;
+    justify-content: flex-end;
+    width: 60px;
+}
+
+.row {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
