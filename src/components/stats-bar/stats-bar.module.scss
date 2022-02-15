@@ -1,0 +1,44 @@
+.root {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+}
+
+.percent {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.myProgress {
+    display: block;
+}
+
+.progressContainer {
+    width: 70%;
+}
+
+.subHeader {
+    font-size: 11px;
+    color: var(--gray-3)
+}
+
+.iconContainer {
+    display: flex;
+    width: 10%;
+    justify-content: center;
+}
+
+.heading {
+    font-weight: 400;
+}
