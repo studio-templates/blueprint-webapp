@@ -8,6 +8,6 @@ export default createBoard({
     Board: () => <PageHeader />,
     environmentProps: {
         canvasWidth: 1163,
-        windowWidth: 900
+        windowWidth: 1228
     }
 });
