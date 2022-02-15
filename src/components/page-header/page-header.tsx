@@ -10,14 +10,13 @@ export interface PageHeaderProps {
 
 export const PageHeader: React.FC<PageHeaderProps> = ({ className }) => {
     return <div className={styles.root}>
-        <div className={MembershipIndicator_module_scss.container}>
+        <div className={`${MembershipIndicator_module_scss.container} ${styles.headerContainer} ${styles.headerContainer}`}>
             <div className={MembershipIndicator_module_scss.textContainer}>
-                <Text>
+                <Text className={styles.pageHeader}>
                     Weekly Warmup
                 </Text>
-                <Text>
+                <Text className={styles.pageSubHeader}>
                     Get summary of your weekly online transactions here.
                 </Text></div>
-            <MembershipIndicator />
-        </div></div>;
+            <MembershipIndicator notificationsIndication userType="Account admin" /></div></div>;
 };

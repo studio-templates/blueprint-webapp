@@ -11,6 +11,10 @@
     margin: 0px 12px;
     min-width: 20px;
     min-height: 20px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .personFrame {
@@ -54,11 +58,11 @@
 .indicator {
     display: flex;
     width: 8px;
-    height: 8px;
     background: #BB4430;
     border-radius: 50%;
     position: relative;
     left: 10px;
     top: 6px;
     z-index: 1;
+    height: 8px;
 }
