@@ -5,5 +5,8 @@ import { StatisticsProgressBar } from '../../../components/statistics-progress-b
 
 export default createBoard({
     name: 'StatisticsProgressBar',
-    Board: () => <StatisticsProgressBar />
+    Board: () => <StatisticsProgressBar />,
+    environmentProps: {
+        canvasWidth: 254
+    }
 });
