@@ -1,0 +1,39 @@
+.root {}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.icon {
+    margin: 0px 12px;
+}
+
+.personFrame {
+    padding: 12px;
+    border-radius: 50%;
+    background: #FFC145;
+
+}
+
+.innerIcon {}
+
+.iconLast {
+    margin-left: 3px;
+}
+
+.textContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.userName {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.userType {}
