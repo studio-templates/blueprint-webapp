@@ -1,0 +1,33 @@
+.root {}
+
+.transactionHistoryHeader {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", Icons16, Suprema;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.titleRow {}
+
+.tableTitleRow {}
+
+.tableTitle {
+    color: #AEAEAE;
+}
+
+.Icon {
+    display: flex;
+    margin: 0px 8px 0px 0px;
+    color: rgb(24, 32, 38);
+    border-radius: 6px;
+    background: #EFEFEF;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.transactionHistoryCard {
+    border-radius: 20px;
+}
+
+.transactionHistoryCard {}

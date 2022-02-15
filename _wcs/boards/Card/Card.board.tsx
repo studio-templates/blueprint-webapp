@@ -5,5 +5,5 @@ import { Card } from '../../../src/components/card/card';
 
 export default createBoard({
     name: 'Card',
-    Board: () => <Card>"I am a Card"</Card>
+    Board: () => <Card elevation={2}>"I am a Card"</Card>
 });
