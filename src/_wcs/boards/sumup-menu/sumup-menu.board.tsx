@@ -9,5 +9,11 @@ export default createBoard({
         icon: 'timeline-line-chart',
         selected: true,
         text: 'Overview'
+    }, {
+        text: 'Transactions',
+        icon: 'properties'
+    }, {
+        text: 'Cards',
+        icon: 'credit-card'
     }]} />
 });
