@@ -8,5 +8,7 @@ export interface GoalsProps {
 
 export const Goals: React.FC<GoalsProps> = ({ className }) => {
     return <div className={styles.root}>
-        <ShadowCard /></div>;
+        <ShadowCard>
+            <h2 className={styles.price}>Heading 2</h2>
+            <h3>Heading 3</h3></ShadowCard></div>;
 };

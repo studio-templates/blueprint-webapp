@@ -7,6 +7,6 @@ export default createBoard({
     name: 'Goals',
     Board: () => <Goals />,
     environmentProps: {
-        canvasWidth: 130
+        canvasWidth: 208
     }
 });
