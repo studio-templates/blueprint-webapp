@@ -22,7 +22,7 @@ export const ProductItem: React.FC<ProductItemProps> = ({
                 </Card>
                 <Card className={styles.product_row}>
                     <p className={styles.product_option}>Big</p>
-                    <input type='radio' name='radio' checked/>
+                    <input type='radio' name='radio' defaultChecked/>
                 </Card>
                 <Card className={styles.product_row}> 
                     <p className={styles.product_option}>Medium</p>

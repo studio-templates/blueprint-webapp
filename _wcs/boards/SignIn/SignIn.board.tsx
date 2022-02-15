@@ -7,8 +7,7 @@ export default createBoard({
     name: 'Example of a sign-in panel',
     Board: () => <SignIn></SignIn>,
     environmentProps: {
-        windowHeight: 634,
-        windowBackgroundColor: '#ffffff',
-        windowWidth: 1024,
+        windowHeight: 600,
+        windowWidth: 800,
     }
 });

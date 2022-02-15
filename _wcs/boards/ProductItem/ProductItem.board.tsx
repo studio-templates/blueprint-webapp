@@ -7,8 +7,7 @@ export default createBoard({
     name: 'Example of product panel',
     Board: () => <ProductItem />,
     environmentProps: {
-        windowWidth: 659,
-        windowHeight: 879,
-        canvasWidth: 379
+        windowWidth: 600,
+        windowHeight: 800,
     }
 });

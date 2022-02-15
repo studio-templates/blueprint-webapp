@@ -92,7 +92,7 @@
     cursor: pointer;
 }
 
-input[type=checkbox] {
+input[type=radio] {
     display: grid;
     place-content: center;
     appearance: none;
@@ -105,7 +105,7 @@ input[type=checkbox] {
     font-size: 1.22rem;
   }
   
-  input[type=checkbox]::before {
+  input[type=radio]::before {
     content: "";
     width: 0.46em;
     height: 0.46em;
@@ -115,6 +115,6 @@ input[type=checkbox] {
     
   }
   
-  input[type=checkbox]:checked::before {
+  input[type=radio]:checked::before {
     transform: scale(1);
   }

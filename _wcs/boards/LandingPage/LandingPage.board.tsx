@@ -7,7 +7,7 @@ export default createBoard({
     name: 'Example of a web-app LP',
     Board: () => <LandingPage />,
     environmentProps: {
-        windowWidth: 980,
+        windowWidth: 1280,
         windowHeight: 1080,
         canvasMargin: {
             top: 1,
