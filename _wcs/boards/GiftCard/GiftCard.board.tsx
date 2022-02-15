@@ -7,7 +7,7 @@ import styles from './GiftCard.board.module.scss';
 
 export default createBoard({
     name: 'Example of a gift card panel',
-    Board: () => <div className={styles['grid-2-col']}><GiftCard imgSrc={photo} /><GiftCard /></div>,
+    Board: () => <div className={styles.grid2col}><GiftCard imgSrc={photo} /><GiftCard /></div>,
     environmentProps: {
         windowHeight: 700,
         canvasHeight: 600
