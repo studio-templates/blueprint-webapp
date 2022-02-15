@@ -5,7 +5,7 @@ import { ShadowCard } from '../../../components/shadow-card/shadow-card';
 
 export default createBoard({
     name: 'ShadowCard',
-    Board: () => <ShadowCard title={'Transaction History'}></ShadowCard>,
+    Board: () => <ShadowCard title={'Transaction History'}>Content</ShadowCard>,
     environmentProps: {
         canvasHeight: 192,
         canvasWidth: 343
