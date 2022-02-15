@@ -11,5 +11,11 @@ export default createBoard({
         text: '2',
     }, {
         text: '3',
-    },]} />
+    }, {
+        text: '555hf'
+    }]} />,
+    environmentProps: {
+        canvasWidth: 244,
+        windowHeight: 640
+    }
 });
