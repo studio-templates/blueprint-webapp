@@ -1,14 +1,17 @@
-import React from 'react';
-import styles from './goals-group.module.scss'
-import { Goals } from '../goals/goals';
+import React from "react";
+import styles from "./goals-group.module.scss";
+import { Goal } from "../goal/goal";
 
 export interface GoalsGroupProps {
-    className?: string;
+  className?: string;
 }
 
 export const GoalsGroup: React.FC<GoalsGroupProps> = ({ className }) => {
-    return <div className={styles.root}>
-        <Goals />
-        <Goals />
-        <Goals /></div>;
+  return (
+    <div className={styles.root}>
+      <Goal />
+      <Goal />
+      <Goal />
+    </div>
+  );
 };
