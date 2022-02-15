@@ -12,7 +12,7 @@ export default createBoard({
     }, {
         text: '3',
     }, {
-        text: '555hf'
+        text: '555h'
     }]} />,
     environmentProps: {
         canvasWidth: 244,
