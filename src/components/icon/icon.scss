@@ -1,3 +1,33 @@
-.root {
+.root {}
+
+.iconContainer {
+    background: #EFEFEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: 25px;
+    height: 25px;
 }
-  
+
+.receiver {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    width: 220px;
+}
+
+.iconContainerReceiver {
+    margin-right: 6px;
+}
+
+.transaction-table-row {
+    display: flex;
+    align-items: center;
+}
+
+.transaction-type {}
+
+.transaction-cell {
+    padding: 12px;
+}
