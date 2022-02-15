@@ -7,6 +7,7 @@ export default createBoard({
     name: 'StatisticsProgressBar',
     Board: () => <StatisticsProgressBar />,
     environmentProps: {
-        canvasWidth: 254
+        canvasWidth: 254,
+        windowWidth: 1024
     }
 });

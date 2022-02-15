@@ -8,5 +8,5 @@ export interface StatisticsProgressBarProps {
 
 export const StatisticsProgressBar: React.FC<StatisticsProgressBarProps> = ({ className }) => {
     return <div className={styles.root}>
-        <ProgressBar animate={false} intent="primary" stripes={false} value={0.3}></ProgressBar></div>;
+        <ProgressBar animate={false} intent="primary" stripes={false} value={0.3} className={styles.progressBar}></ProgressBar></div>;
 };
