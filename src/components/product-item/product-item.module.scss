@@ -2,28 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 // Styles
-.card {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto', sans-serif; 
-
-    &.wrapper{   
+.product {
+    &_wrapper{   
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif; 
         background-color: #E4F3F7;
         border-radius: 2rem;
         overflow: hidden;
         min-width: 350px;
-        width: 375px;        
+        width: 350px;        
         padding: 0;
     }
     
-    &.body {         
+    &_body {  
+        display: flex;
+        flex-direction: column;       
         padding: 1.5rem;
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;    
         box-shadow: none; 
     }
 
-    &.row {         
+    &_row {    
+        display: flex;     
         flex-direction: row; 
         justify-content: space-between; 
         align-items: center;
@@ -32,19 +34,17 @@
         padding: 0;
     }
 
-    img{
+    &_image{
         width: 100%;
         height: 100%; 
-        max-height: 350px; 
-        flex-basis: 100px;
-        padding: 3rem; 
+        max-height: 340px; 
+        flex-basis: 280px;
+        padding: 3.5rem; 
         object-position: top;
         object-fit: contain;
         
     }
-}
 
-.product{
     &_name{
         font-size: 22px;
     }
@@ -57,14 +57,23 @@
     &_desc{
         font-size: 16px;
         font-weight: 300;
+        text-align: justify;
         color: #8E8E93;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    &_option{
+        font-weight: 400;        
+        font-size: 16px;
+        margin: 0;
     }
 }
 
 .btn-icon{
     background: #54B2CF;
     display: inline-block;
-    padding: 1.5rem;    
+    padding: 1.25rem;    
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -75,119 +84,10 @@
     color: #FFFFFF;
     background: #323232;
     border-radius: 2rem;
-    padding: 1.5rem 4.5rem;  
+    padding: 1.25rem 4.5rem;  
     font-size: 14px;
     font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
+    font-family: 'Roboto', sans-serif;    
     border: none;
-}
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.product-screen {
-    background-color: #E4F3F7;
-    width: 375px;
-    height: 812px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    font-family: Roboto;
-}
-
-.image-container {
-    width: 200px;
-    margin-top: 80px;
-}
-.product-image {
-    width: 100%;
-}
-
-
-
-.price-row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-}
-.product-name {
-    font-size: 22px;
-}
-.product-price {
-    font-size: 28px;
-    font-weight: 500;
-}
-
-.size-row {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: flex-start;
-    margin-bottom: 26px;
-}
-.size-option {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    font-weight: 400;
-    align-items: center;
-    font-size: 16px;
-    margin: 0px 0px 14px;
-}
-
-.description-row {
-    margin: 0px 0px 20px;
-}
-.description {
-    font-size: 16px;
-    color: #8E8E93;
-    font-weight: 300;
-}
-
-.buttons-row {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: 20px;
+    cursor: pointer;
 }

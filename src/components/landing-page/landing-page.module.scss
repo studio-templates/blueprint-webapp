@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     padding: 4rem 1rem 0 1rem;     
-    gap: 15rem; 
+    gap: 10rem; 
     z-index: 1;
 }
 
@@ -65,9 +65,9 @@
     border-color: var(--color); 
     border-style: solid;
     border-width: 0;
-    border-bottom-width: 45px;
+    border-bottom-width: 1rem;
     width: 100vw;
-    height: 33%;
+    height: 60%;
     bottom: 0;   
     opacity: 0.5;
     svg{

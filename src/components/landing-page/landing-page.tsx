@@ -39,7 +39,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             </div> 
             <div className = {styles.divider}>
                 <svg viewBox = '0 0 300 200' width = '100%' height = '100%' preserveAspectRatio = 'none'>
-                    <path d = 'M 0,200 L 300,0 L 300,200 z'></path>
+                <path d="M 0,200 C 0,200 300,200 300,0 L 300,200 z"></path>
                 </svg> 
             </div>
         </div>
@@ -48,7 +48,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
 };
 
 
-
-
-//<path d = 'M 0,200 L 300,0 L 300,200 z'></path>
-//<path d="M 0,200 C 0,200 300,200 300,0 L 300,200 z"></path>
+/*
+<path d = 'M 0,200 L 300,0 L 300,200 z'></path>
+<path d="M 0,200 C 0,200 300,200 300,0 L 300,200 z"></path>
+<path d="M 0,200 L 0,0 Q 159,400 300,0 L 300,200 z"></path>*/
