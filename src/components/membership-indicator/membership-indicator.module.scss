@@ -1,0 +1,68 @@
+.root {}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.icon {
+    margin: 0px 12px;
+    min-width: 20px;
+    min-height: 20px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.personFrame {
+    padding: 12px;
+    border-radius: 50%;
+    background: #FFC145;
+    margin: 0px 0px 0px 6px;
+
+}
+
+.innerIcon {
+    color: #E3E3E3;
+    position: relative;
+    display: inline;
+    width: 20px;
+    height: 20px;
+}
+
+.iconLast {
+    margin-left: 6px;
+}
+
+.textContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.userName {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Verdana, sans-serif;
+}
+
+.userType {
+    font-family: Verdana, sans-serif;
+    color: #AEAEAE;
+}
+
+.indicator {
+    display: flex;
+    width: 8px;
+    background: #BB4430;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: 6px;
+    z-index: 1;
+    height: 8px;
+}
