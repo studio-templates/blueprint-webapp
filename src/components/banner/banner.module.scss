@@ -1,0 +1,25 @@
+.root {}
+
+.card {
+    border-radius: 19px;
+    width: 157px;
+    height: 183px;
+    min-width: 0px;
+    background: #D15842;
+    padding: 5px;
+}
+
+.label {
+    position: relative;
+    flex-direction: column;
+    font-family: Times New Roman, serif;
+    font-size: 12px;
+    line-height: 25px;
+    color: #ffff;
+    font-weight: 600;
+    top: 100px;
+}
+
+.icon {}
+
+.bcrd-icon {}
