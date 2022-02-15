@@ -4,12 +4,18 @@ import { Amount } from '../amount/amount';
 
 export interface TransactionTableRowProps {
     className?: string;
+    name: string;
+    icon: string;
+    type: string;
+    date: string;
+    amount: number;
 }
 
-export const TransactionTableRow: React.FC<TransactionTableRowProps> = ({ className = '' }) => (
+export const TransactionTableRow: React.FC<TransactionTableRowProps> = ({ amount, date, icon, name, type, className = '' }) => (
     <div className={`${className} transaction-table-row`}>
-        <Receiver className="transaction-cell"></Receiver>
-        <span className="transaction-type transaction-cell">text        </span>
-        <span className="transaction-cell">text</span>
-        <Amount amount={25} className="transaction-cell"></Amount></div>
+        <Receiver icon={icon} name={name} className="transaction-cell"></Receiver>
+        <span className="transaction-type transaction-cell">{type}</span>
+        <span className="transaction-cell transaction-date">{date}</span>
+        <Amount amount={amount} className="transaction-cell" />
+    </div>
 );

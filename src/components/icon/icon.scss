@@ -26,8 +26,16 @@
     align-items: center;
 }
 
-.transaction-type {}
+.transaction-type {
+    width: 100px;
+    color: #C7C7C7;
+}
 
 .transaction-cell {
     padding: 12px;
+}
+
+.transaction-date {
+    width: 120px;
+    color: #C7C7C7;
 }
