@@ -1,3 +1,5 @@
+@import '../../colors.module.scss';
+
 .root {}
 
 .GoalCard {
@@ -11,7 +13,7 @@
 }
 
 .Price {
-    color: #696969;
+    color: $primaryGray;
     font-family: Arial, sans-serif;
     font-size: 22px;
 }

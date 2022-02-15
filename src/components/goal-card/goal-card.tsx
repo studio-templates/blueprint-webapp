@@ -18,7 +18,7 @@ export const GoalCard: React.FC<GoalCardProps> = ({ className, price, date, icon
             <div className={styles.Date}>{date}</div>
             <div className={styles.category}>
                 <div className={styles.Icon}>
-                    <Icon icon={icon} className={styles.Icon} size={35} color={''} />
+                    <Icon icon={icon} className={styles.Icon} size={35} color={'#70A6E8'} />
                 </div>
                 <div className={styles.CategoryText}>{category}</div>
             </div></div></div>;
