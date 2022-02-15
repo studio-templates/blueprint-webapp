@@ -17,7 +17,7 @@ export const ItemStatistics: React.FC<ItemStatisticsProps> = ({ className, name,
         <div className={styles['stat-icon']}>
             <Icon icon={icon} size={20} color={color} /></div>
         <div className={styles['progress-bar']}>
-            <ProgressBar animate={false} value={value} intent="primary" stripes={false}></ProgressBar>
+            <ProgressBar animate={false} value={value} intent="warning" stripes={false} className={styles['progress-bar-inner']} />
             <span className={styles['stat-name']}>{name}</span>
         </div>
         <div className={styles['progress-text']}>{Math.round(value * 100)}%</div>
