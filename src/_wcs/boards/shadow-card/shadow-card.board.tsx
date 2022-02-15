@@ -7,7 +7,7 @@ export default createBoard({
     name: 'ShadowCard',
     Board: () => <ShadowCard title={'Transaction History'}>Content</ShadowCard>,
     environmentProps: {
-        canvasHeight: 192,
+        canvasHeight: 252,
         canvasWidth: 343
     }
 });
