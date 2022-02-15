@@ -1,0 +1,44 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+// Styles
+.card {
+    display: flex;
+    flex-direction: column;     
+    background-color: #fafafa; 
+    font-family: 'Lato',  sans-serif;  
+    padding: 0;
+    gap: 0;  
+
+    &.wrapper{   
+        border-radius: 12px;
+        min-width: 280px;
+        width: 320px; 
+        padding: 2rem;       
+        gap: 1rem;
+    }
+
+    &.header{
+        align-items: flex-start; 
+    }
+
+    &.submit {
+        flex-direction: row;
+        justify-content: space-between;  
+        margin-top: 3rem; 
+    }
+}
+
+.btn {
+    border: none;
+    border-radius: 2rem;
+    min-width: 5rem;
+    font-size: 1em;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.logo {
+    height: 6rem;
+    margin-bottom: 1rem;
+}
