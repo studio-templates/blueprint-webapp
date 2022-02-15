@@ -5,7 +5,7 @@ import { GoalCard } from '../../../components/goal-card/goal-card';
 
 export default createBoard({
     name: 'GoalCard',
-    Board: () => <GoalCard price="$550" category={'Holidays'} date={'12.3.22'} icon={'pin'} />,
+    Board: () => <GoalCard price="$550" category={'Holidays'} date={'12/20/22'} icon={'pin'} />,
     environmentProps: {
         canvasWidth: 157
     }
