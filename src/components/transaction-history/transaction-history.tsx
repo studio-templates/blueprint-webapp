@@ -13,8 +13,8 @@ export const TransactionHistory: React.FC<TransactionHistoryProps> = ({
     className,
 }) => {
     return (
-        <div className={styles.root}>
-            <Card elevation={2}>
+        <div className={`${styles.root} ${styles.transactionHistoryCard}`}>
+            <Card elevation={2} className={styles.transactionHistoryCard}>
                 <h1 className={styles.transactionHistoryHeader}>
                     Transaction history
                 </h1>
