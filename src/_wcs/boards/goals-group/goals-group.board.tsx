@@ -5,5 +5,9 @@ import { GoalsGroup } from '../../../components/goals-group/goals-group';
 
 export default createBoard({
     name: 'GoalsGroup',
-    Board: () => <GoalsGroup />
+    Board: () => <GoalsGroup />,
+    environmentProps: {
+        canvasWidth: 528,
+        canvasHeight: 197
+    }
 });
