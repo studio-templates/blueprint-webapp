@@ -8,6 +8,6 @@ export default createBoard({
     Board: () => <GoalsStrip />,
     environmentProps: {
         canvasWidth: 514,
-        canvasHeight: 158
+        canvasHeight: 170
     }
 });
