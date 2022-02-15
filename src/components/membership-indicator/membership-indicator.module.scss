@@ -15,13 +15,18 @@
     padding: 12px;
     border-radius: 50%;
     background: #FFC145;
+    margin: 0px 0px 0px 6px;
 
 }
 
-.innerIcon {}
+.innerIcon {
+    color: #E3E3E3;
+    position: relative;
+    display: inline;
+}
 
 .iconLast {
-    margin-left: 3px;
+    margin-left: 6px;
 }
 
 .textContainer {
@@ -32,8 +37,24 @@
 }
 
 .userName {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Verdana, sans-serif;
 }
 
-.userType {}
+.userType {
+    font-family: Verdana, sans-serif;
+    color: #AEAEAE;
+}
+
+.indicator {
+    display: flex;
+    width: 8px;
+    height: 8px;
+    background: #C51515;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: 6px;
+    z-index: 1;
+}
