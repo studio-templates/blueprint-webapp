@@ -5,7 +5,7 @@ import { ProgressBar } from '../../../src/components/progress-bar/progress-bar';
 
 export default createBoard({
     name: 'ProgressBar',
-    Board: () => <ProgressBar intent="success" stripes={true} animate={false} />,
+    Board: () => <ProgressBar intent="success" stripes={true} animate={false} value={0.2} />,
     environmentProps: {
         canvasWidth: 250
     }
