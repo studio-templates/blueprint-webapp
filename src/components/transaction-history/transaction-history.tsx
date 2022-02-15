@@ -17,17 +17,17 @@ export const TransactionHistory: React.FC<TransactionHistoryProps> = ({
             <Card elevation={2}>
                 <h1 className={styles.transactionHistoryHeader}>
                     Transaction history
-                </h1><br />
+                </h1>
                 <Title className={styles.tableTitle} /><table>
                     <Transaction
-                        icon="airplane"
+                        icon="shopping-cart"
                         receiver="Tesco Market"
                         typeName="Shopping"
                         date="13 Dec 2020"
                         amount={75.67}
                     />
                     <Transaction
-                        icon="airplane"
+                        icon="truck"
                         receiver="ElectroMen Market"
                         typeName="Shopping"
                         date="14 Dec 2020"
@@ -41,14 +41,14 @@ export const TransactionHistory: React.FC<TransactionHistoryProps> = ({
                         amount={19.5}
                     />
                     <Transaction
-                        icon="airplane"
+                        icon="person"
                         receiver="John Mathew Kayne"
                         typeName="Sport"
                         date="06 Dec 2020"
                         amount={350}
                     />
                     <Transaction
-                        icon="airplane"
+                        icon="person"
                         receiver="Ann Marlin"
                         typeName="Shopping"
                         date="31 Nov 2020"
