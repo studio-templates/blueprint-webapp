@@ -1,0 +1,28 @@
+.root {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    flex-direction: row;
+}
+
+.stat-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-text {
+    width: 40px;
+}
+
+.progress-bar {
+    width: calc(100% - 80px);
+}
+
+.stat-name {
+    line-height: 17px;
+    color: #AEAEAE;
+}
