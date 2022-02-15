@@ -12,7 +12,7 @@ export const Goals: React.FC<GoalsProps> = ({ className }) => {
         <ShadowCard showCard={true}>
             <div className={styles.price}>550$<div className={styles.date}>12/20/20</div>
             </div>
-            <div className={styles.footer}><Icon icon={'emoji'}></Icon>
+            <div className={styles.footer}><Icon icon={'calendar'}></Icon>
                 <div className={styles.category}>Holidays</div></div>
         </ShadowCard></div>;
 };
