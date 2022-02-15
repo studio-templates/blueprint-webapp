@@ -1,8 +1,15 @@
 .circle-btn {
     color: #FFFFFF;
     background: #54B2CF;
-    padding: 20px;
     display: inline-block;
-    border-radius: 50%;
     cursor: pointer;
+    border-radius: 50%;
+}
+
+.large {
+    padding: 20px;
+}
+
+.small {
+    padding: 4px 8px 6px;
 }
