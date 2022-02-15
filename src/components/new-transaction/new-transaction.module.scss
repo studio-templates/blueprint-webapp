@@ -1,0 +1,44 @@
+.root {
+    width: 341px;
+    height: 183px;
+}
+
+.userAvatars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addicon {
+    background: #FFC145;
+    border-radius: 9999px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.addcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomline {
+    margin-top: 10px;
+}
+
+.input {
+    width: 175px;
+    height: 36px;
+}
+
+.send {
+    background: #FFC145;
+    width: 131px;
+    height: 36px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
