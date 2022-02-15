@@ -1,0 +1,39 @@
+.root {}
+
+.GoalCard {
+    width: 157px;
+    height: 168px;
+    border-radius: 28px;
+    box-shadow: 0 0 20px -8px rgba(0, 0, 0, 0.62);
+    padding: 14px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Price {
+    color: #696969;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}
+
+.Date {
+    color: #AEAEAE;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+}
+
+.category {
+    margin-top: 36px;
+}
+
+.CategoryText {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #404040;
+}
+
+.Icon {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+}
