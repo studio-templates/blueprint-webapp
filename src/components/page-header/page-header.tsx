@@ -18,5 +18,5 @@ export const PageHeader: React.FC<PageHeaderProps> = ({ className }) => {
                 <Text className={styles.pageSubHeader}>
                     Get summary of your weekly online transactions here.
                 </Text></div>
-            <MembershipIndicator notificationsIndication userType="Account admin" /></div></div>;
+            <MembershipIndicator notificationsIndication userType="Account admin" envelopeIndication={true} userName="Andrew" /></div></div>;
 };
