@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './goals.module.scss'
 import { ShadowCard } from '../shadow-card/shadow-card';
+import { Icon } from '../icon/Icon';
 
 export interface GoalsProps {
     className?: string;
@@ -8,7 +9,10 @@ export interface GoalsProps {
 
 export const Goals: React.FC<GoalsProps> = ({ className }) => {
     return <div className={styles.root}>
-        <ShadowCard>
-            <h2 className={styles.price}>Heading 2</h2>
-            <h3>Heading 3</h3></ShadowCard></div>;
+        <ShadowCard showCard={true}>
+            <div className={styles.price}>550$<div className={styles.date}>12/20/20</div>
+            </div>
+            <div className={styles.footer}><Icon icon={'emoji'}></Icon>
+                <div className={styles.category}>Holidays</div></div>
+        </ShadowCard></div>;
 };
