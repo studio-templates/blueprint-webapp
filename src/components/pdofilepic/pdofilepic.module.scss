@@ -1,0 +1,22 @@
+.root {}
+
+.profile {
+    display: flex;
+    grid-auto-flow: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.roundimg {
+    border-radius: 100px;
+    width: 42px;
+    height: 42px;
+}
+
+.text {
+    font-size: 12px;
+    padding: 2px;
+    color: 404040;
+    margin-top: 2px;
+}
