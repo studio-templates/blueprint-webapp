@@ -5,5 +5,10 @@ import { Card } from '../../../src/components/card/card';
 
 export default createBoard({
     name: 'Card',
-    Board: () => <Card>"I am a Card"</Card>
+    Board: () => <Card className="shadow"></Card>,
+    environmentProps: {
+        canvasHeight: 194,
+        canvasWidth: 271,
+        canvasBackgroundColor: '#ffffff'
+    }
 });
