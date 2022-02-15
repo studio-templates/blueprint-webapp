@@ -15,9 +15,13 @@
 }
 
 .Icon {
-    display: inline-block;
+    display: flex;
     margin: 0px 8px 0px 0px;
     color: rgb(24, 32, 38);
-    border-radius: 5px;
+    border-radius: 6px;
     background: #EFEFEF;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
 }

@@ -26,7 +26,9 @@ export const Transaction: React.FC<TransactionProps> = ({
         <div className={`${styles.root} ${styles.row}`}>
             <tr className={styles.tr}>
                 <td className={`${styles.receiverColumn}`}>
-                    <Icon icon={icon as IconName} className={TransactionHistory_module_scss.Icon} />
+                    <div>
+                        <Icon icon={icon as IconName} className={TransactionHistory_module_scss.Icon} />
+                    </div>
                     <span>{receiver}</span>
                 </td>
                 <td className={styles.typeColumn}>
