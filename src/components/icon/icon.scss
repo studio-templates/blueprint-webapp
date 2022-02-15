@@ -13,10 +13,21 @@
 .receiver {
     display: flex;
     align-items: center;
-    padding: 12px;
+    padding: 0px;
     width: 220px;
 }
 
 .iconContainerReceiver {
     margin-right: 6px;
+}
+
+.transaction-table-row {
+    display: flex;
+    align-items: center;
+}
+
+.transaction-type {}
+
+.transaction-cell {
+    padding: 12px;
 }

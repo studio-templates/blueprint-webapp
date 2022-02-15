@@ -6,6 +6,6 @@ import { IconContainer } from '../../../components/icon-container/icon-container
 
 export default createBoard({
     name: 'Receiver',
-    Board: () => <Receiver></Receiver>,
+    Board: () => <Receiver className="transaction-cell"></Receiver>,
     environmentProps: {}
 });
