@@ -5,5 +5,8 @@ import { PageHeader } from './../../../src/components/page-header/page-header';
 
 export default createBoard({
     name: 'PageHeader',
-    Board: () => <PageHeader />
+    Board: () => <PageHeader />,
+    environmentProps: {
+        canvasWidth: 1069
+    }
 });

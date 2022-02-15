@@ -2,9 +2,10 @@
 
 .headerContainer {
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     padding: 0px;
+    display: flex;
 }
 
 .pageHeader {
