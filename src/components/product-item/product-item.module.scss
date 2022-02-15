@@ -91,3 +91,30 @@
     border: none;
     cursor: pointer;
 }
+
+input[type=checkbox] {
+    display: grid;
+    place-content: center;
+    appearance: none;
+    margin: 0;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.04em solid black;
+    border-radius: 50%;
+    
+    font-size: 1.22rem;
+  }
+  
+  input[type=checkbox]::before {
+    content: "";
+    width: 0.46em;
+    height: 0.46em;
+    border-radius: 50%;
+    background-color: black;
+    transform: scale(0);
+    
+  }
+  
+  input[type=checkbox]:checked::before {
+    transform: scale(1);
+  }

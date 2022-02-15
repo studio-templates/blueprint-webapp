@@ -4,7 +4,7 @@ import { createBoard } from '@wixc3/react-board';
 import { LandingPage } from '../../../src/components/landing-page/landing-page';
 
 export default createBoard({
-    name: 'LandindPage',
+    name: 'Example of a web-app LP',
     Board: () => <LandingPage />,
     environmentProps: {
         windowWidth: 980,

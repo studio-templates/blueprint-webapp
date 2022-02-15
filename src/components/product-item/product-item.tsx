@@ -22,22 +22,22 @@ export const ProductItem: React.FC<ProductItemProps> = ({
                 </Card>
                 <Card className={styles.product_row}>
                     <p className={styles.product_option}>Big</p>
-                    <input type="radio" name="radio" />
+                    <input type='radio' name='radio' checked/>
                 </Card>
                 <Card className={styles.product_row}> 
                     <p className={styles.product_option}>Medium</p>
-                    <input type="radio" checked name="radio" />
+                    <input type='radio' name='radio'/>
                 </Card>
                 <Card className={styles.product_row}> 
                     <p className={styles.product_option}>Small</p>
-                    <input type="radio" name="radio" />
+                    <input type='radio' name='radio' />
                 </Card>                    
                 <Card className={styles.product_row}>
                     <p className={styles.product_desc}>A holiday classic, our Peppermint Mocha infuses hand-pulled espresso with rich chocolate sauce.</p>                  
                 </Card>
                 <Card className={styles.product_row}>               
                     <button className={styles['btn-icon']} type='button'>
-                        <Icon icon="heart" color='white' size={16} />
+                        <Icon icon='heart' color='white' size={16} />
                     </button>
                     <button className={styles['btn-add']} type='button'>Add to cart</button>
                 </Card>
