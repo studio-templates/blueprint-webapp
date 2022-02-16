@@ -1,5 +1,3 @@
-
-import './label.scss'
 import { Label as BluePrint_Label } from '@blueprintjs/core'
 
 // We imported this 3rd party component from Blueprint in this way for demo purposes.

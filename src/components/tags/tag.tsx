@@ -1,4 +1,3 @@
-import './tag.scss'
 import { Tag as BluePrint_Tag } from '@blueprintjs/core'
 
 // We imported this 3rd party component from Blueprint in this way for demo purposes.

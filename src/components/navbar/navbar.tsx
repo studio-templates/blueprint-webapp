@@ -1,4 +1,3 @@
-import './navbar.scss'
 import { Navbar as BluePrint_Navbar  } from '@blueprintjs/core'
 
 // We imported this 3rd party component from Blueprint in this way for demo purposes.
