@@ -13,9 +13,9 @@ export const TransactionHistory: React.FC<TransactionHistoryProps> = ({ classNam
             <table className={styles.table}>
                 <tr>
                     <th className={styles['table-head-col']}>Receiver</th>
-                    <th>Type</th>
-                    <th>Date</th>
-                    <th>Amount</th>
+                    <th className={styles['table-head-col']}>Type</th>
+                    <th className={styles['table-head-col']}>Date</th>
+                    <th className={styles['table-col-right']}>Amount</th>
                 </tr>
             </table></Card></div>;
 };
