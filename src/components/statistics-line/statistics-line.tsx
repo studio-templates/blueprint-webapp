@@ -15,7 +15,9 @@ export const StatisticsLine: React.FC<StatisticsLineProps> = ({ className }) => 
             <div className={styles.progressDetails}>
                 <StatisticsProgressBar />
                 <span className={styles.description}>Shopping</span>
-            </div></div>
+            </div>
+            <h1 className={styles.completion}>52%</h1>
+        </div>
         <div className={styles.line}>
             <IconCard backgroundColor="#DDF9E4" color="#22A447" icon="truck" />
             <div className={styles.progressDetails}>

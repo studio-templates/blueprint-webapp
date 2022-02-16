@@ -19,7 +19,7 @@ export const IconCard: React.FC<IconCardProps> = ({
 }) => {
     return (
         <div className={styles.root}>
-            <Card className={styles.IconCard} style={{ color, backgroundColor }}>
+            <Card className={styles.IconCard} style={{ color, backgroundColor }} elevation={2}>
                 <Icon icon={icon} className={styles.IconSize} />
             </Card>
         </div>
