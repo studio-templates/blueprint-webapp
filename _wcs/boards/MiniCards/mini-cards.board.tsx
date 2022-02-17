@@ -10,4 +10,3 @@ export default createBoard({
         windowHeight: 800,
     }
 });
-
