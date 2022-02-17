@@ -44,7 +44,7 @@ export const SignIn: React.FC<SignInProps> = ({
                 id='pass'             
             />
             <div className={`${styles.card} ${styles.submit}`}>
-            {forgotLabel}
+                {forgotLabel}
                 <Button text={submitButtonCaption} className={styles.btn} intent='primary' type="submit" />
             </div>
         </Card>

@@ -27,7 +27,7 @@ export const MiniCards: React.FC<MiniCardsProps> = ({
             </Card>            
             <Card className={styles.card} elevation={Elevation.THREE}>
                 <ProgressBar animate={false} intent='primary' value={0.65}/>
-                <span/><Button className={styles.btn} intent='primary' icon="cross" ></Button>
+                <span/><Button className={styles.btn} intent='primary' icon="cross"/>
             </Card>
             <Callout title='Successfully Updated' icon='automatic-updates' intent='success'>
                     <p className={`${styles.title} ${styles.sub}`}>Aliquam imperdiet lacus quam, imperdiet fermentum lectus pretium vitae. 
