@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { createBoard } from '@wixc3/react-board';
 import { GiftCard } from '../../../src/components/gift-card/gift-card';
 import photo from '../../../src/components/gift-card/assets/img-2.jpg';
-import styles from './GiftCard.board.module.scss';
+import styles from './gift-card.board.module.scss';
 
 export default createBoard({
     name: 'Example of a gift card panel',

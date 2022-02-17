@@ -3,7 +3,6 @@ import { ProductItem } from '../product-item/product-item';
 import styles from './landing-page.module.scss';
 import defaultLogo from './assets/logo.svg'; 
 
-
 export interface LandingPageProps {
     className?: string;    
     title?: string;
