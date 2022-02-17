@@ -6,10 +6,14 @@ import styles from './product-item.module.scss';
 export interface ProductItemProps {    
     className?: string;
     imgURL?: string;
+    iconColor?: string;
+    title: string;
 }
 
 export const ProductItem: React.FC<ProductItemProps> = ({ 
     imgURL = defaultImg,  
+    iconColor = 'white',
+    title,
     ...props
 }) => {
     return (
@@ -17,7 +21,7 @@ export const ProductItem: React.FC<ProductItemProps> = ({
             <img className={styles.product_image} src={imgURL} />            
             <Card className={styles.product_body}>                
                 <Card className={styles.product_row}> 
-                    <p className={styles.product_name}>Peppermint Mocha</p>
+                    <p className={styles.product_name}>{title}</p>
                     <p className={styles.product_price}>$28.00</p>
                 </Card>
                 <Card className={styles.product_row}>
@@ -37,7 +41,7 @@ export const ProductItem: React.FC<ProductItemProps> = ({
                 </Card>
                 <Card className={styles.product_row}>               
                     <button className={styles['btn-icon']} type='button'>
-                        <Icon icon='heart' color='white' size={16} />
+                        <Icon icon='heart' color={iconColor} size={16} />
                     </button>
                     <button className={styles['btn-add']} type='button'>Add to cart</button>
                 </Card>
