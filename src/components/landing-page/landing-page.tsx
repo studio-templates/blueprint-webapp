@@ -17,9 +17,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
     logoURL = defaultLogo,
     subTitle =  'Alaskan made. Santa approved. The best grain, the finest roast, the most powerful flavor.',
     videoURL =  'https://video.wixstatic.com/video/68d3a9_d6f59c533b0e49cf8e44e6ff23ace28a/1080p/mp4/file.mp4', 
-    posterURL = 'https://static.wixstatic.com/media/68d3a9_d6f59c533b0e49cf8e44e6ff23ace28af000.jpg',   
-    ...props
-
+    posterURL = 'https://static.wixstatic.com/media/68d3a9_d6f59c533b0e49cf8e44e6ff23ace28af000.jpg',
 }) => {
     return (        
         <div className = {styles.page}>   
