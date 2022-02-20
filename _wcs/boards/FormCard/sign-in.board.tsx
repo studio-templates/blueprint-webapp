@@ -3,7 +3,7 @@ import { createBoard } from '@wixc3/react-board';
 import { FormCard } from '../../../src/components/form-card/form-card';
 
 export default createBoard({
-    name: 'Sign-in card',
+    name: 'Sign-in',
     Board: () => <FormCard/>,
     environmentProps: {
         windowHeight: 600,
