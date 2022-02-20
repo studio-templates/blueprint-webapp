@@ -1,5 +1,5 @@
 import React from 'react';
-import {Elevation, RadioGroup, Radio,Button, Card, Icon, H1} from "@blueprintjs/core";
+import {Elevation, Card, Icon} from "@blueprintjs/core";
 import defaultImg from './assets/peppermint.png';
 import styles from './product-item.module.scss';
 
@@ -9,8 +9,7 @@ export interface ProductItemProps {
 }
 
 export const ProductItem: React.FC<ProductItemProps> = ({ 
-    imgURL = defaultImg,  
-    ...props
+    imgURL = defaultImg,
 }) => {
     return (
         <Card className={styles.product_wrapper} elevation={Elevation.FOUR}>             
