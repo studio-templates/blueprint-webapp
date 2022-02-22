@@ -12,6 +12,13 @@ export interface LandingPageProps {
     posterURL?: string;
 }
 
+/**
+ * This Landing Page component is a simple demo component to showcase the capabilities of Wix Component Studio, 
+ * it is a basic implementation, which is not meant to be utilized in a production environment.
+ * 
+ * Use this demo to get a feel for how easy and fun it is to create and edit components in WCS using Blueprint.js, a 3rd party React-based UI toolkit.
+ * 
+ */
 export const LandingPage: React.FC<LandingPageProps> = ({  
     title = 'Coffee for thought',
     logoURL = defaultLogo,
