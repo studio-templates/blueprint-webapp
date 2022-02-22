@@ -3,10 +3,8 @@ import {Elevation, H1, H5, H6, Card} from "@blueprintjs/core";
 import defaultPhotoURL from './assets/img-1.jpg';
 import styles from './gift-card.module.scss';
 
-
 export interface GiftCardProps { 
     photoURL?: string
-
 }
 
 /**
