@@ -1,11 +1,15 @@
 import React from 'react';
 import {Elevation, Card, Icon} from "@blueprintjs/core";
-import defaultImg from './assets/peppermint.png';
+import defaultItemPhoto from './assets/pprmint.png';
 import styles from './product-item.module.scss';
 
-export interface ProductItemProps {    
-    className?: string;
-    imgURL?: string;
+export interface ProductItemProps { 
+    itemPhotoURL?: string;
+    itemName?: string;
+    itemPrice?: number;
+    itemDescription?: string;
+    isFavorite?: boolean
+
 }
 
 /**
@@ -16,37 +20,42 @@ export interface ProductItemProps {
  * 
  */
 export const ProductItem: React.FC<ProductItemProps> = ({ 
-    imgURL = defaultImg,
+    itemPhotoURL = defaultItemPhoto,
+    itemName = 'Peppermint Mocha',
+    itemPrice = 18.0,
+    itemDescription = 'A holiday classic, Espresso Roast combines with steamed milk, sweet mocha sauce and peppermint-flavored syrup, topped with whipped cream.',
+    isFavorite = false
+
 }) => {
     return (
         <Card className={styles.product_wrapper} elevation={Elevation.FOUR}>             
-            <img className={styles.product_image} src={imgURL} />            
+            <img className={styles.product_image} src={itemPhotoURL} />            
             <Card className={styles.product_body}>                
-                <Card className={styles.product_row}> 
-                    <p className={styles.product_name}>Peppermint Mocha</p>
-                    <p className={styles.product_price}>$28.00</p>
-                </Card>
-                <Card className={styles.product_row}>
+                <div className={styles.product_row}> 
+                    <p className={styles.product_name}>{itemName}</p>
+                    <p className={styles.product_price}>{'$' + itemPrice}</p>
+                </div>
+                <div className={styles.product_row}>
                     <p className={styles.product_option}>Big</p>
                     <input type='radio' name='radio' defaultChecked/>
-                </Card>
-                <Card className={styles.product_row}> 
+                </div>
+                <div className={styles.product_row}> 
                     <p className={styles.product_option}>Medium</p>
                     <input type='radio' name='radio'/>
-                </Card>
-                <Card className={styles.product_row}> 
+                </div>
+                <div className={styles.product_row}> 
                     <p className={styles.product_option}>Small</p>
                     <input type='radio' name='radio' />
-                </Card>                    
-                <Card className={styles.product_row}>
-                    <p className={styles.product_desc}>A holiday classic, our Peppermint Mocha infuses hand-pulled espresso with rich chocolate sauce.</p>                  
-                </Card>
-                <Card className={styles.product_row}>               
+                </div>                    
+                <div className={styles.product_row}>
+                    <p className={styles.product_desc}>{itemDescription}</p>                  
+                </div>
+                <div className={styles.product_row}>               
                     <button className={styles['btn-icon']} type='button'>
-                        <Icon icon='heart' color='white' size={16} />
+                        <Icon icon='heart' color={isFavorite ? '#ff7979': 'white'} size={20} />
                     </button>
                     <button className={styles['btn-add']} type='button'>Add to cart</button>
-                </Card>
+                </div>
             </Card>
         </Card>
     )
