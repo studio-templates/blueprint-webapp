@@ -1,31 +1,29 @@
 import React from 'react';
 import { ProductItem } from '../product-item/product-item';
+import logoURL from './assets/logo.svg'; 
 import styles from './landing-page.module.scss';
-import defaultLogo from './assets/logo.svg'; 
 
 export interface LandingPageProps {
-    className?: string;    
-    title?: string;
-    subTitle?: string;
-    logoURL?: string;
     videoURL?: string;
-    posterURL?: string;
+    posterURL?: string
+
 }
 
 /**
- * This Landing Page component is a simple demo component to showcase the capabilities of Wix Component Studio, 
+ * This Product Item component is a simple demo component to showcase the capabilities of Wix Component Studio, 
  * it is a basic implementation, which is not meant to be utilized in a production environment.
  * 
  * Use this demo to get a feel for how easy and fun it is to create and edit components in WCS using Blueprint.js, a 3rd party React-based UI toolkit.
  * 
  */
-export const LandingPage: React.FC<LandingPageProps> = ({  
-    title = 'Coffee for thought',
-    logoURL = defaultLogo,
-    subTitle =  'Alaskan made. Santa approved. The best grain, the finest roast, the most powerful flavor.',
+export const LandingPage: React.FC<LandingPageProps> = ({ 
     videoURL =  'https://video.wixstatic.com/video/68d3a9_d6f59c533b0e49cf8e44e6ff23ace28a/1080p/mp4/file.mp4', 
-    posterURL = 'https://static.wixstatic.com/media/68d3a9_d6f59c533b0e49cf8e44e6ff23ace28af000.jpg',
+    posterURL = 'https://static.wixstatic.com/media/68d3a9_d6f59c533b0e49cf8e44e6ff23ace28af000.jpg'
+
 }) => {
+    const title = 'Coffee for thought'
+    const subTitle =  'Alaskan made. Santa approved. The best grain, the finest roast, the most powerful flavor.'
+
     return (        
         <div className = {styles.page}>   
             <div className = {styles.videoBG}>
