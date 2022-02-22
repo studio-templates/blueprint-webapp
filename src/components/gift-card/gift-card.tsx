@@ -9,7 +9,6 @@ export interface GiftCardProps {
 
 }
 
-
 /**
  * This Gift Card component is a simple demo component to showcase the capabilities of Wix Component Studio, 
  * it is a basic implementation, which is not meant to be utilized in a production environment.

@@ -19,7 +19,6 @@ export interface FormCardProps {
 export const FormCard: React.FC<FormCardProps> = ({     
     formType = 'signin',        
     logoURL = defaultLogoURL
-    
 }) => {    
     const submitCaption = formType === 'signin' ? 'Sign In' : formType === 'signup' ? 'Sign Up' : 'Send'
     const formTitle = formType === 'signin' ? 'Sign In' : formType === 'signup' ? 'Sign Up' : 'Contact Us'
@@ -49,7 +48,6 @@ export const FormCard: React.FC<FormCardProps> = ({
             ) : (
                 <TextArea/>
             )}
-            
             <div className={`${styles.card} ${styles.submit}`}>               
                 {formType !== 'contact' ? 'Forgot your Password?' : <span/>}
                 <Button text={submitCaption} className={styles.btn} intent='primary' type="submit" />
