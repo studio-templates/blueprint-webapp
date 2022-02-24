@@ -5,3 +5,11 @@ import { Card as BluePrint_Card } from '@blueprintjs/core'
 // Soon you’ll be able to add from external libraries through the Add Panel.
 
 export const Card = BluePrint_Card
+export interface BluePrint_CardProps {
+    className?: string;
+    date: string;
+    price: number;
+    goal: string;
+    img: string;
+}
+

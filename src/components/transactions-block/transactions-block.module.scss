@@ -1,0 +1,38 @@
+.root {
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.categories {
+    display: block;
+    grid-auto-flow: column;
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.reciever {
+    margin-right: 170px;
+    display: inline;
+}
+
+.date {
+    display: inline;
+    margin-right: 74px;
+}
+
+.type {
+    display: inline;
+    margin-right: 75px;
+}
+
+.amount {
+    display: inline;
+}
+
+.blocktitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}

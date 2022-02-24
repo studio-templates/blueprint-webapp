@@ -1,3 +1,42 @@
-.root {
+.root {}
+
+.base {
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
-  
+
+.subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 4px;
+    color: #95999B;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.header {
+    display: inline;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-auto-flow: row;
+    gap: 4px;
+    grid-template-rows: 1fr;
+    height: 50px;
+}
+
+.footer {
+    margin-top: 40px;
+}
+
+.category {
+    font-size: 20px;
+    font-weight: 200;
+}
