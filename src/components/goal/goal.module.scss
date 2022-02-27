@@ -1,0 +1,41 @@
+.root {}
+
+.price {
+    margin-bottom: 0px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.date {
+    font-weight: 300;
+    display: block;
+    color: #AEAEAE;
+    font-size: 14px;
+}
+
+.heading {
+    display: grid;
+    flex-direction: column;
+    grid-auto-flow: row;
+    gap: 6px;
+    padding: 6px;
+    height: 24px;
+}
+
+.footer {
+    margin-top: 52px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.category {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.icon {
+    color: #DF19B2;
+    margin-bottom: 5px;
+}
