@@ -1,0 +1,38 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.progressDetails {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 5px;
+}
+
+.description {
+    color: #AEAEAE;
+    font-family: Arial, sans-serif;
+}
+
+.completion {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #696969;
+    margin: 5px;
+}
