@@ -3,6 +3,11 @@
     font-family: Lato;
 }
 
+$blue: #197BBD;
+$green: #439A86;
+$red: #BB4430;
+
+
 .content {
     display: flex;
     justify-content: center;
@@ -38,12 +43,12 @@
 }
 
 .balance {
-    color: #197BBD;
+    color: $blue;
 }
 
 .income {
-    color: #439A86;
+    color: $green;
 }
 .outcome {
-    color: #BB4430;
+    color: $red;
 }
