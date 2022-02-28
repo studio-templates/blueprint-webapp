@@ -4,5 +4,5 @@ import { Statistics } from '../../../components/statistics/statistics';
 
 export default createBoard({
     name: 'Outcome',
-    Board: () => <Statistics price={2850.75} text="Outcome" />
+    Board: () => <Statistics price={350.65} text="Outcome" />
 });
