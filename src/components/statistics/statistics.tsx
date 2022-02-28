@@ -10,7 +10,7 @@ export interface StatisticsProps {
 export const Statistics: React.FC<StatisticsProps> = ({ text, price, className }) => {
     return <div className={styles.root}>
         <div className={styles.content}>
-            <div className={styles.header}>$ {price}</div>
+            <div className={`${styles.header} ${styles.blue}`}>$ {price}</div>
             <div className={styles.description}>{text}</div>
         </div>
     </div>;
