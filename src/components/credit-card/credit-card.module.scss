@@ -1,0 +1,125 @@
+.root {
+    overflow: hidden;
+}
+
+.card {
+    width: 320px;
+    height: 205px;
+    border-radius: 26px;
+    background: linear-gradient(180deg, #3182c2 0%, #3993c6 100%);
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+.fontQuicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.fontBold {
+    font-weight: 700;
+}
+
+.companyTitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: relative;
+    top: -20px;
+}
+
+.premium {
+    font-size: 9px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.39);
+    position: relative;
+    text-transform: uppercase;
+    top: -45px;
+}
+
+.cardNumber {
+    position: relative;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+    top: -10%;
+    letter-spacing: 1px;
+}
+
+.cardNumberContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 90%;
+    position: relative;
+    top: -10%;
+    left: -3%;
+}
+
+.cardHolderTitle {
+    font-weight: 400;
+    position: relative;
+    display: block;
+    top: 18px;
+    font-size: 9px;
+}
+
+.cardHolder {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top: -18%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.expiryDate {
+    color: #FFFFFF;
+    font-size: 13px;
+    position: relative;
+    left: 40%;
+    font-weight: 500;
+    top: -100px;
+}
+
+.expiryDateTitle {
+    font-size: 9px;
+    font-weight: 400;
+    position: relative;
+    top: 18px;
+    display: block;
+}
+
+.circle {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #61AADD;
+    overflow: hidden;
+}
+
+.circleFirst {
+    right: 32%;
+    width: 150px;
+    height: 150px;
+    bottom: 25%;
+}
+
+.circleSecond {
+    bottom: 30%;
+    right: 45%;
+    position: absolute;
+    z-index: 0;
+}
+
+.circleThird {
+    bottom: 38%;
+    right: 39%;
+}
+
+.circleFourth {}
