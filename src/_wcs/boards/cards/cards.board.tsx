@@ -7,6 +7,8 @@ export default createBoard({
     Board: () => <Cards />,
     environmentProps: {
         canvasHeight: 364,
-        canvasWidth: 593
+        canvasWidth: 597,
+        windowWidth: 1024,
+        canvasBackgroundColor: '#dadada'
     }
 });
