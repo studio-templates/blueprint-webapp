@@ -4,11 +4,11 @@ import { Cards } from '../../../components/cards/cards';
 
 export default createBoard({
     name: 'Card',
-    Board: () => <Cards />,
+    Board: () => <Cards incomePrice={1500.55} outcomePrice={350.65} balancePrice={2850.75} />,
     environmentProps: {
         canvasHeight: 364,
         canvasWidth: 597,
-        windowWidth: 1024,
+        windowWidth: 926,
         canvasBackgroundColor: '#dadada'
     }
 });

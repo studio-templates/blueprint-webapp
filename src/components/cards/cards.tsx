@@ -8,9 +8,12 @@ import { CreditCard } from '../credit-card/credit-card';
 
 export interface CardsProps {
     className?: string;
+    balancePrice?: number;
+    incomePrice?: number;
+    outcomePrice?: number;
 }
 
-export const Cards: React.FC<CardsProps> = ({ className }) => {
+export const Cards: React.FC<CardsProps> = ({ outcomePrice, incomePrice, balancePrice, className }) => {
     return <div className={styles.root}>
         <Card className={styles.outline}>
             <p className={styles.title}>Cards</p>
@@ -21,9 +24,9 @@ export const Cards: React.FC<CardsProps> = ({ className }) => {
                 <Divider color="E8E8E8" className={styles.divider} />
                 <div className={styles['right-side']}>
                     <div className={styles.statistics}>
-                        <Statistics price={2850.75} type="balance" />
-                        <Statistics price={1500.55} type="income" />
-                        <Statistics price={350.65} type="outcome" />
+                        <Statistics price={balancePrice} type="balance" />
+                        <Statistics price={incomePrice} type="income" />
+                        <Statistics price={ outcomePrice} type="outcome" />
                     </div>
                     <SwitchComposite />
                 </div>
