@@ -4,5 +4,8 @@ import { SwitchComposite } from '../../../components/switch-composite/switch-com
 
 export default createBoard({
     name: 'SwitchComposite',
-    Board: () => <SwitchComposite />
+    Board: () => <SwitchComposite />,
+    environmentProps: {
+        windowWidth: 728
+    }
 });
