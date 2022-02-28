@@ -13,21 +13,21 @@ export interface CardsProps {
 export const Cards: React.FC<CardsProps> = ({ className }) => {
     return <div className={styles.root}>
         <Card className={styles.outline}>
-                    <p className={styles.title}>Cards</p>
-                    <div className={styles.layout}>
-                        <div className={styles['left-side']}>
-                            <CreditCard cardHolder="Mike Smith" company="cloudcash" expiryDate="06/21" premium />
-                        </div>
-                        <Divider color="E8E8E8" className={styles.divider} />
-                        <div className={styles['right-side']}>
-                            <div className={styles.statistics}>
-                                <Statistics price={2850.75} text="Current Balance" />
-                                <Statistics price={1500.55} text="Income" />
-                                <Statistics price={350.65} text="Outcome" />
-                            </div>
-                            <SwitchComposite />
-                        </div>
+            <p className={styles.title}>Cards</p>
+            <div className={styles.layout}>
+                <div className={styles['left-side']}>
+                    <CreditCard cardHolder="Mike Smith" company="cloudcash" expiryDate="06/21" premium />
+                </div>
+                <Divider color="E8E8E8" className={styles.divider} />
+                <div className={styles['right-side']}>
+                    <div className={styles.statistics}>
+                        <Statistics price={2850.75} type="balance" />
+                        <Statistics price={1500.55} type="income" />
+                        <Statistics price={350.65} type="outcome" />
                     </div>
-            </Card>
+                    <SwitchComposite />
+                </div>
+            </div>
+        </Card>
     </div>;
 };

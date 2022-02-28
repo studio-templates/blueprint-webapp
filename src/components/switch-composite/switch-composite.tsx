@@ -4,7 +4,7 @@ import { Switch } from '../switch/switch';
 
 export interface SwitchCompositeProps {
     className?: string;
-    activeCard: boolean;
+    activeCard?: boolean;
 }
 
 export const SwitchComposite: React.FC<SwitchCompositeProps> = ({ activeCard, className }) => {
