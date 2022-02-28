@@ -17,11 +17,10 @@ $red: #BB4430;
 
 .header {
     font-weight: 700;
-    font-size: 32px;
     line-height: 38px;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     gap: 5px;
 }
 
@@ -30,25 +29,24 @@ $red: #BB4430;
     line-height: 14px;
 }
 
-.blue {
-    color: #197BBD;
-}
-
 .dollar {
     font-size: 18px;
     align-items: flex-end;
     justify-content: flex-end;
     line-height: 20px;
-    padding-bottom: 5px;
 }
 
-.balance {
+.balance .header {
     color: $blue;
+    font-size: 32px;
 }
 
-.income {
+.income .header {
     color: $green;
+    font-size: 18px;
 }
-.outcome {
+
+.outcome .header {
     color: $red;
+    font-size: 18px;
 }
