@@ -12,9 +12,7 @@ export interface CardsProps {
 
 export const Cards: React.FC<CardsProps> = ({ className }) => {
     return <div className={styles.root}>
-        <Card
-            children={
-                <>
+        <Card className={styles.outline}>
                     <p className={styles.title}>Cards</p>
                     <div className={styles.layout}>
                         <div className={styles['left-side']}>
@@ -30,8 +28,6 @@ export const Cards: React.FC<CardsProps> = ({ className }) => {
                             <SwitchComposite />
                         </div>
                     </div>
-                </>
-            }
-            className={styles.outline} />
+            </Card>
     </div>;
 };
