@@ -9,6 +9,7 @@
     background: linear-gradient(180deg, #3182c2 0%, #3993c6 100%);
     color: #FFFFFF;
     overflow: hidden;
+    position: relative;
 }
 
 .fontQuicksand {
@@ -104,22 +105,22 @@
 }
 
 .circleFirst {
-    right: 32%;
+    right: -50px;
     width: 150px;
     height: 150px;
-    bottom: 25%;
+    bottom: -30%;
 }
 
 .circleSecond {
-    bottom: 30%;
-    right: 45%;
+    right: 78px;
     position: absolute;
     z-index: 0;
+    bottom: -15px;
 }
 
 .circleThird {
-    bottom: 38%;
-    right: 39%;
+    bottom: 30px;
+    right: 15px;
 }
 
 .circleFourth {}

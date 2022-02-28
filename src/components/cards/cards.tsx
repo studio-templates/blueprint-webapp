@@ -16,9 +16,9 @@ export const Cards: React.FC<CardsProps> = ({ className }) => {
             children={
                 <>
                     <div className={styles['left-side']}>
-                        <CreditCard />
+                        <CreditCard cardHolder="Mike Smith" company="cloudcash" expiryDate="06/21" premium />
                     </div>
-                    <Divider color="E8E8E8" />
+                    <Divider color="E8E8E8" className={styles.divider} />
                     <div className={styles['right-side']}>
                         <Statistics price={2850.75} text="Current Balance" />
                         <Statistics price={1500.55} text="Income" />
