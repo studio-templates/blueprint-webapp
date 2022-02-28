@@ -1,0 +1,39 @@
+.root {
+    padding: 4px 0px;
+}
+
+.tr {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.receiverColumn {
+    width: 240px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.typeColumn {
+    width: 120px;
+    color: #C7C7C7;
+}
+
+.dateColumn {
+    width: 120px;
+    color: #C7C7C7;
+}
+
+.amountColumn {
+    display: flex;
+    justify-content: flex-end;
+    width: 60px;
+}
+
+.row {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}

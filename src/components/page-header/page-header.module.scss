@@ -1,0 +1,22 @@
+.root {}
+
+.headerContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    display: flex;
+}
+
+.pageHeader {
+    font-size: 42px;
+    font-weight: 600;
+    font-family: Verdana, sans-serif;
+    color: #404040;
+}
+
+.pageSubHeader {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: #AEAEAE;
+}
