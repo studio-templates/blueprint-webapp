@@ -23,11 +23,9 @@ export const Cards: React.FC<CardsProps> = ({ outcomePrice, incomePrice, balance
                 </div>
                 <Divider color="E8E8E8" className={styles.divider} />
                 <div className={styles['right-side']}>
-                    <div className={styles.statistics}>
                         <Statistics price={balancePrice} type="balance" />
                         <Statistics price={incomePrice} type="income" />
                         <Statistics price={ outcomePrice} type="outcome" />
-                    </div>
                     <SwitchComposite />
                 </div>
             </div>
