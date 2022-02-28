@@ -4,6 +4,7 @@ import { Statistics } from '../statistics/statistics';
 import { SwitchComposite } from '../switch-composite/switch-composite';
 import { Card } from '../card/card';
 import { Divider } from '../divider/divider';
+import { CreditCard } from '../credit-card/credit-card';
 
 export interface CardsProps {
     className?: string;
@@ -15,7 +16,7 @@ export const Cards: React.FC<CardsProps> = ({ className }) => {
             children={
                 <>
                     <div className={styles['left-side']}>
-                        <div className={styles.creditCard} />
+                        <CreditCard />
                     </div>
                     <Divider color="E8E8E8" />
                     <div className={styles['right-side']}>
