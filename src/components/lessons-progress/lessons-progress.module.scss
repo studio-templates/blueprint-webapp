@@ -1,0 +1,54 @@
+:root {
+    --btn-size: 3rem;
+}
+
+.wrapper {
+    display: flex;
+    align-content: flex-start;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    width: calc(var(--btn-size) + 1.25rem);
+
+    &:not(:last-child):after {
+        content: "";
+        flex: 1;
+        position: relative;
+        background-color: #ccc;
+        height: 2px;
+    }
+
+    &.completed {
+        &:after {
+            background: #0099ff;
+        }
+        button{
+            background: #0099ff;
+            border-color: #0099ff;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    &.active {
+        button{
+            background: #fff;
+            border-color: #0099ff;
+            color: #0099ff;
+            cursor: default;
+        }
+    }
+}
+
+button{  
+    font-size: calc(0.5 * var(--btn-size));
+    width: var(--btn-size);
+    height: var(--btn-size);
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background: #fff;
+    color: #ccc;
+    cursor: default;
+}
