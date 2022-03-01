@@ -3,7 +3,7 @@ import styles from './statistics.module.scss'
 
 export interface StatisticsProps {
     className?: string;
-    price: number;
+    price?: number;
     type?: 'balance' | 'income' | 'outcome';
 }
 
