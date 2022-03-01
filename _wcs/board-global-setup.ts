@@ -8,7 +8,7 @@ const fontLoader = function () {
     //link.href = 'http://fonts.googleapis.com/css?family=Oswald&effect=neon';
     headID.appendChild(link);
 
-    link.href = 'http://fonts.googleapis.com/css?family=' + 'Lato';
+    link.href = 'http://fonts.googleapis.com/css?family=' + 'Poppins';
 
 
 }();
