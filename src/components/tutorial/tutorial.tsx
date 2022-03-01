@@ -26,16 +26,68 @@ export const Tutorial: React.FC<TutorialProps> = ({
     
     
     const Lesson = lessonsInfo[curLesson]?.lesson;
-    return (
-        <div>
+    return (        
+        <div className = {styles.wrapper}>
             {Lesson ?  <Lesson/> : <Welcome/>}
-            <LessonsProgress lessonsInfo={lessonsInfo} curLesson={curLesson} goToLesson={setCurLesson}/>
+            <div className = {styles.controls}>                
+                <input type='button' value='click'/>
+                <LessonsProgress 
+                    lessonsInfo={lessonsInfo} 
+                    curLesson={curLesson} 
+                    goToLesson={setCurLesson}
+                />
+            </div>
         </div>
     )
 };
 
 
-/*return (
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<div className = {styles.page}>   
+    <div className = {styles.videoBG}>
+        <video className = {styles.vContent} poster={posterURL} autoPlay muted loop preload='auto'>
+            <source src = {videoURL} type="video/mp4"/>  
+        </video>
+    </div>
+    <div className = {styles.content}>
+        <div className = {styles.cols}>
+            <img className = {styles.logo} src={logoURL}/> 
+            <p className = {styles.title}>{title}</p> 
+            <p className = {styles.subtitle}> {subTitle}</p>
+        </div>
+        <ProductItem/>
+    </div> 
+    <div className = {styles.divider}>
+        <svg viewBox = '0 0 300 200' width = '100%' height = '100%' preserveAspectRatio = 'none'>
+        <path d="M 0,200 C 0,200 300,200 300,0 L 300,200 z"></path>
+        </svg> 
+    </div>
+</div>
+
+
+return (
     <div className={styles.wrapper}>
         {curLesson == -1 ? <Welcom/> : <Lesson/>}
         <LessonsProgress current={state} onClick={onClic}/>

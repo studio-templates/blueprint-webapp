@@ -10,6 +10,12 @@ export default createBoard({
         windowWidth: 1000,
         windowHeight: 690,
         canvasWidth: 1000,
-        canvasHeight: 690
+        canvasHeight: 690,
+        canvasMargin: {
+            top: 1,
+            left: 1,
+            bottom: 1,
+            right: 1
+        }
     }
 });
