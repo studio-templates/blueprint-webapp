@@ -1,19 +1,9 @@
+@import '../../theme/colors.module.scss';
+
 .root {
     flex-direction: column;
     font-family: Poppins;
 }
-
-$dark: #404040;
-$dark-grey: #696969;
-$light-grey: #AEAEAE;
-$red: #BB4430;
-$orange: #F99B53;
-$yellow: #FFC145;
-$light-green: #24AB4A;
-$dark-green: #439A86;
-$dark-blue: #197BBD;
-$light-blue: #70A6EB;
-
 
 .content {
     display: flex;

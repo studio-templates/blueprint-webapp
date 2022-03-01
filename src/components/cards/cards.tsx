@@ -25,13 +25,13 @@ export const Cards: React.FC<CardsProps> = ({
             <Card className={styles.outline}>
                 <p className={styles.title}>Cards</p>
                 <div className={`${styles.layout} ${styles.content}`}>
-                    <div className={styles["left-side"]}>
+                    <div className={styles["left"]}>
                         <CreditCard
                             cardInfo={cardInfo}
                         />
                     </div>
                     <Divider color="E8E8E8" className={styles.divider} />
-                    <div className={styles["right-side"]}>
+                    <div className={styles["right"]}>
                         <Statistics price={balancePrice} type="balance" />
                         <Statistics price={incomePrice} type="income" />
                         <Statistics price={outcomePrice} type="outcome" />

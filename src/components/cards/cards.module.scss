@@ -1,20 +1,11 @@
+@import '../../theme/colors.module.scss';
+
 .root {
     height: 365px;
     font-family: Poppins;
 }
 
-$dark: #404040;
-$dark-grey: #696969;
-$light-grey: #AEAEAE;
-$red: #BB4430;
-$orange: #F99B53;
-$yellow: #FFC145;
-$light-green: #24AB4A;
-$dark-green: #439A86;
-$dark-blue: #197BBD;
-$light-blue: #70A6EB;
-
-.right-side {
+.right {
     display: flex;
     height: 90%;
     width: 25%;
@@ -27,7 +18,7 @@ $light-blue: #70A6EB;
     height: 90%;
 }
 
-.left-side {}
+.left {}
 
 .content {
     display: flex;
