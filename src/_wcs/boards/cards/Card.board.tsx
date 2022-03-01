@@ -9,6 +9,6 @@ export default createBoard({
         canvasHeight: 364,
         canvasWidth: 597,
         windowWidth: 926,
-        canvasBackgroundColor: '#ffffff'
+        canvasBackgroundColor: '#ffffff',
     }
 });
