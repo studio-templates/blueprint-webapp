@@ -7,7 +7,6 @@ export interface CardInfo {
   expiryDate: string;
   company: string;
   premium?: boolean;
-  isExpired?: boolean;
 }
 
 export interface CreditCardProps {

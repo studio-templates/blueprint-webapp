@@ -4,19 +4,21 @@ import { Statistics } from "../statistics/statistics";
 import { SwitchComposite } from "../switch-composite/switch-composite";
 import { Card } from "../card/card";
 import { Divider } from "../divider/divider";
-import { CreditCard } from "../credit-card/credit-card";
+import { CreditCard, CardInfo } from "../credit-card/credit-card";
 
 export interface CardsProps {
   className?: string;
   balancePrice?: number;
   incomePrice?: number;
   outcomePrice?: number;
+  cardInfo: CardInfo;
 }
 
 export const Cards: React.FC<CardsProps> = ({
   outcomePrice,
   incomePrice,
   balancePrice,
+  cardInfo,
 }) => {
   return (
     <div className={styles.root}>
@@ -25,12 +27,7 @@ export const Cards: React.FC<CardsProps> = ({
         <div className={styles.layout}>
           <div className={styles["left-side"]}>
             <CreditCard
-              cardInfo={{
-                company: "cloudcash",
-                cardHolder: "Mike Smith",
-                expiryDate: "06/21",
-                premium: true,
-              }}
+              cardInfo={cardInfo}
             />
           </div>
           <Divider color="E8E8E8" className={styles.divider} />
