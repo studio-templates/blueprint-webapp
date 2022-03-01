@@ -5,11 +5,9 @@
 
 .right-side {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
     height: 95%;
     width: 25%;
+    flex-direction: column;
 }
 
 .divider {
@@ -18,11 +16,11 @@
 
 .left-side {}
 
-.layout {
+.content {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     position: relative;
     height: 90%;
     width: 100%;

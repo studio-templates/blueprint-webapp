@@ -17,15 +17,15 @@ export const Cards: React.FC<CardsProps> = ({ outcomePrice, incomePrice, balance
     return <div className={styles.root}>
         <Card className={styles.outline}>
             <p className={styles.title}>Cards</p>
-            <div className={styles.layout}>
+            <div className={styles.content}>
                 <div className={styles['left-side']}>
-                    <CreditCard cardHolder="Mike Smith" company="cloudcash" expiryDate="06/21" premium />
+                    <CreditCard cardHolder="Mike Smith" company="cloudcash" premium expiryDate="06/25" />
                 </div>
                 <Divider color="E8E8E8" className={styles.divider} />
                 <div className={styles['right-side']}>
-                        <Statistics price={balancePrice} type="balance" />
-                        <Statistics price={incomePrice} type="income" />
-                        <Statistics price={ outcomePrice} type="outcome" />
+                    <Statistics price={balancePrice} type="balance" />
+                    <Statistics price={incomePrice} type="income" />
+                    <Statistics price={outcomePrice} type="outcome" />
                     <SwitchComposite />
                 </div>
             </div>
