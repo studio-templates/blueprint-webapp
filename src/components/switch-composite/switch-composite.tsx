@@ -12,6 +12,6 @@ export const SwitchComposite: React.FC<SwitchCompositeProps> = ({ activeCard, cl
 
     return <div className={styles.root}>
         <Switch className={styles.switch} checked={active} onChange={() => setActive(!active)}/>
-        {active ? 'Deactivate card' : 'Active card'}
+        {active ? 'Card deactivated' : 'Deactivate card'}
     </div>;
 };
