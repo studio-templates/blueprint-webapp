@@ -2,23 +2,24 @@ import React from "react";
 import styles from "./credit-card.module.scss";
 import { Card } from "../card/card";
 
-export interface CreditCardProps {
+export interface CardInfo {
   cardHolder: string;
   expiryDate: string;
   company: string;
   premium?: boolean;
-  isExpired?: boolean;
+}
+
+export interface CreditCardProps {
+  cardInfo: CardInfo;
+  className?: string;
 }
 
 export const CreditCard: React.FC<CreditCardProps> = ({
-  cardHolder,
-  expiryDate,
-  company,
-  premium,
-  isExpired
+  cardInfo: { cardHolder, expiryDate, company, premium },
+  className,
 }) => {
   return (
-    <div className={styles.root}>
+    <div className={`${styles.root} ${className}`}>
       <Card className={styles.card} elevation={2}>
         <div className={styles.circles}>
           <div className={`${styles.circle} ${styles.circleFirst}`}></div>
