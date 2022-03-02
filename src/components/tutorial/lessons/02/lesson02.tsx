@@ -2,12 +2,12 @@ import React from 'react';
 import styles from './lesson02.module.scss'
 
 export interface Lesson02Props {
-    
+    classNme?: string;
 }
 
 export const Lesson02: React.FC<Lesson02Props> = ({}) => {
     return (
-        <div>
+        <div className={styles.content}>
             <h1>Lesson Two</h1>
         </div>
     )

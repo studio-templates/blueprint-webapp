@@ -1,8 +1,9 @@
 import React from 'react';
 
 export interface ILesson {
-    lesson: React.ComponentType;
-    endTimeStamp: number;
+    lessonComponent: React.ComponentType;
+    startTime: number;
+    endTime: number;
 }
 
 export interface ILessonInfo extends ILesson {
