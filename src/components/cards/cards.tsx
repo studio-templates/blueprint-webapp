@@ -20,6 +20,7 @@ export const Cards: React.FC<CardsProps> = ({
     balancePrice,
     cardInfo,
 }) => {
+    console.log(styles)
     return (
         <div className={styles.root}>
             <Card className={styles.outline}>
@@ -27,15 +28,16 @@ export const Cards: React.FC<CardsProps> = ({
                 <div className={`${styles.layout} ${styles.content}`}>
                     <div className={styles["left"]}>
                         <CreditCard
+                            className={styles.creditCard}
                             cardInfo={cardInfo}
                         />
                     </div>
-                    <Divider color="E8E8E8" className={styles.divider} />
-                    <div className={styles["right"]}>
+                    <Divider  color="E8E8E8" className={styles.divider} />
+                    <div className={styles.right}>
                         <Statistics price={balancePrice} type="balance" />
-                        <Statistics price={incomePrice} type="income" />
+                        <Statistics price={incomePrice} type="income" className={styles.rightSideStats} />
                         <Statistics price={outcomePrice} type="outcome" />
-                        <SwitchComposite />
+                        <SwitchComposite className={styles.deactivate} />
                     </div>
                 </div>
             </Card>

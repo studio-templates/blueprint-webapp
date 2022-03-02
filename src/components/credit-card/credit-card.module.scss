@@ -1,11 +1,11 @@
 .root {
     overflow: hidden;
+    height: 100%;    
+    border-radius: 20px;
 }
 
 .card {
-    width: 320px;
-    height: 205px;
-    border-radius: 26px;
+    height: 100%;
     background: linear-gradient(180deg, #3182c2 0%, #3993c6 100%);
     color: #ffffff;
     overflow: hidden;
