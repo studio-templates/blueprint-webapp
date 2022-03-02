@@ -1,17 +1,21 @@
 @import '../../theme/colors.module.scss';
 
 .root {
-    height: 365px;
+    height: 385px;
     font-family: Poppins;
 }
 
 .right {
-    display: flex;
+    display: grid;
     height: 90%;
-    width: 25%;
-    flex-direction: column;
+    width: 100%;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: flex-start;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 20px;
 }
 
 .divider {
@@ -22,7 +26,7 @@
 
 .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     position: relative;
@@ -55,4 +59,10 @@
     line-height: 25px;
     font-weight: 600;
     color: #404040;
+    margin-bottom: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: 30px;
 }

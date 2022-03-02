@@ -2,9 +2,10 @@
 
 .root {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: flex-start;
     color: #AEAEAE;
+    justify-content: center;
 }
 
 .switch {}
