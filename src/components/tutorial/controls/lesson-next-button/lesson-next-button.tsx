@@ -18,20 +18,3 @@ export const LessonNextButton: React.FC<LessonNextButtonProps> = ({
         />
     );
 };
-
-/*function getUIClass(idx: number, curLesson: number, lessonCompleted: boolean): string {      
-    return  idx === curLesson ? (lessonCompleted ? 'revisited': 'active') :  (lessonCompleted ? 'completed': 'none');
-}
-
-onClick={() => {
-    if(curLesson > -1) {
-        let updatedLessonsInfo = [...lessonsInfo]; 
-        updatedLessonsInfo[curLesson].completed = true; 
-        setLessonsInfo(updatedLessonsInfo); 
-    }     
-    setCurLesson(curLesson < lessons.length - 1 ? curLesson + 1 : curLesson) 
-}}
-
-*/
-
-

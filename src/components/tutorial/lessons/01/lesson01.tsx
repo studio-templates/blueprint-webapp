@@ -8,9 +8,10 @@ export interface Lesson01Props {
 export const Lesson01: React.FC<Lesson01Props> = ({ }) => {
     return (
         <div className={styles.content}>
-            <h1>Lesson One</h1>
+            <h1>Lesson 1</h1>
             <input type="checkbox" />
-            <label>check me if u can</label>
+            <label>click me if u dare</label>
+            <button>Button</button>
         </div>
     )
 };

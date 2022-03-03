@@ -13,7 +13,14 @@ export const LessonProgressIndicator: React.FC<LessonProgressIndicatorProps> = (
     lessonsInfo = [],
     curLesson = 0
 
-}) => {
+}) => {  
+
+    const getClassName = (idx: number, curLesson: number, lessonCompleted: boolean) => {      
+        return  idx === curLesson  
+            ? (lessonCompleted ? 'revisited': 'active')   
+            : (lessonCompleted ? 'completed': 'none');
+    }          
+    
     return (
         <div className={styles.wrapper}>
             {lessonsInfo.length ?
@@ -21,9 +28,9 @@ export const LessonProgressIndicator: React.FC<LessonProgressIndicatorProps> = (
                     idx !== 0 ? 
                         <div 
                             key={idx} 
-                            className={styles['step-item'] + ' ' + styles[getGUIClassName(idx, curLesson, lesson.completed)]}
+                            className={styles['step-item'] + ' ' + styles[getClassName(idx, curLesson, lesson.completed)]}
                         >                        
-                            <button 
+                            <button className={styles.btn}
                                 disabled={!( lesson.completed && (idx !== curLesson))} 
                                 onClick={() => gotoLesson(idx)}
                             >{idx}</button>
@@ -33,7 +40,3 @@ export const LessonProgressIndicator: React.FC<LessonProgressIndicatorProps> = (
         </div>
     );
 };
-
-function getGUIClassName(idx: number, curLesson: number, lessonCompleted: boolean): string {      
-    return  idx === curLesson ? (lessonCompleted ? 'revisited': 'active') :  (lessonCompleted ? 'completed': 'none');
-}

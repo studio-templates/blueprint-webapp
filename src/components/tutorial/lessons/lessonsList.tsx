@@ -6,11 +6,11 @@ import { Lesson03 } from './03/lesson03';
 import { Lesson04 } from './04/lesson04';
 import { Lesson05 } from './05/lesson05';
 
-export const lessons: ILesson[] = [
+export const lessonsList: ILesson[] = [
     {
         lessonComponent: Welcome,
         startTime: 0.0,
-        endTime: 3.0
+        endTime: 9.0
     },
     {
         lessonComponent: Lesson01,

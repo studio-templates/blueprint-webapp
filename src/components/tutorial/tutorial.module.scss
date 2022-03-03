@@ -1,7 +1,7 @@
 
 // Styles
 :root{
-    background: #fff;
+    background: whitesmoke;
 }
 
 .wrapper {     
@@ -26,162 +26,26 @@
     gap: 5rem;
 }
 
+.modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.content {   
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding: 4rem 1rem 0 1rem;     
-    gap: 10rem; 
-    z-index: 1;
-}
-
-.cols{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-
-    .logo {
-        height: 18rem;
-        margin-bottom: 2rem;        
-    }
-
-    .title {
-        font-size: 4em; 
-        font-weight: 700; 
-        color: #323232;
-    }
-
-    .subtitle {
-        font-size: 1.5em;
-        text-align: justify;
-        width:500px;
-        color: whitesmoke;
-        opacity: 0.6;
-    }
-}*/
-
-/*.controls{
-    position: fixed;
-    bottom: 0;
-    display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
-    max-width: 80vw;
-    padding: 2rem;   
-}*/
 
-/* lp
-position: relative;
-display: flex;
-justify-content: center;
-padding: 4rem 1rem 0 1rem;
-gap: 10rem;
-z-index: 1;*/
-
-
-
-/*
---padding: 10vh;
-    --min-height: 40vh;
-    --content-max: 70ch;
-     display: grid; 
-    min-height: var(--min-height);
-    padding-bottom: var(--padding);
-    padding-top: var(--padding);
-     place-content: center; 
-    text-align: center;
-
-
-
-
-     --color: black;
-    position: fixed;
-    bbox-sizing: border-box;
-    bborder-color: var(--color); 
-    bborder-style: solid;
-    bborder-width: 0;
-    bborder-bottom-width: 0;
-    width: 100vw;
-    hheight: 60%;
-    bottom: 0;   
-    opacity: 0.5;
-    
-    svg{
-        fill: var(--color);
-    }
-    */
-
-    /*.content {  
-   
-    margin: auto;
-    margin-top: 2rem;
-    padding: 0;
+    animation: fx 0.35s;
+    animation-timing-function: ease-in;
+     
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10;
 }
 
-
-
-
-.cosls{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    .logo {
-        height: 18rem;
-        margin-bottom: 2rem;        
-    }
-
-    .title {
-        font-size: 4em; 
-        font-weight: 700; 
-        color: #323232;
-    }
-
-    .subtitle {
-        font-size: 1.5em;
-        text-align: justify;
-        width:500px;
-        color: whitesmoke;
-        opacity: 0.6;
-    }
+@keyframes fx {
+    from {opacity: 0}
+    to {opacity: 1}
 }
-
-.videoBG {
-    background-color: #72b9da;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-
-    .vContent{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-        opacity: 0.5;
-    }
-}*/

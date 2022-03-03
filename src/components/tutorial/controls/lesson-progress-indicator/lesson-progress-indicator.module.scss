@@ -21,7 +21,7 @@
     }
 
     &.active {
-        button{
+        .btn{
             background: #fff;
             border-color: #0099ff;
             color: #0099ff;
@@ -33,7 +33,7 @@
         &:after {
             background: #0099ff;
         }
-        button{
+        .btn{
             background: #0099ff;
             border-color: #0099ff;
             color: #fff;
@@ -45,7 +45,7 @@
         &:after {
             background: #0099ff;
         }
-        button{
+        .btn{
             background: #fff;
             border-color: #0099ff;
             color: #0099ff;
@@ -54,7 +54,7 @@
     }
 }
 
-button{  
+.btn{  
     font-size: calc(0.5 * var(--btn-size));
     width: var(--btn-size);
     height: var(--btn-size);
