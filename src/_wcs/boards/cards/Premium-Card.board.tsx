@@ -5,7 +5,7 @@ import { Cards } from '../../../components/cards/cards';
 export default createBoard({
     name: 'Premium Card',
     Board: () => <Cards incomePrice={1500.55} outcomePrice={350.65} balancePrice={2850.75} cardInfo={{
-        cardHolder: 'Anat Fennig ',
+        cardHolder: 'Anat Fennig',
         company: 'Wix',
         expiryDate: '06/25',
         premium: true
