@@ -1,112 +1,86 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ILesson, ILessonInfo } from './lessons/types';
+import { ILesson} from './helpers/types';
 import { LessonProgressIndicator } from './controls/lesson-progress-indicator/lesson-progress-indicator';
-import { LessonNextButton } from './controls/lesson-next-button/lesson-next-button';
-import videoPoster from './assets/poster.jpg';
+import { LessonVideoPlayButton } from './controls/lesson-video-play-button/lesson-video-play-button';
+import { usePersistentState } from './helpers/use-persistent-state';
 import styles from './tutorial.module.scss'
 
 
 export interface TutorialProps {
-    lessonsList: Array<ILesson>
+    lessonsData: Array<ILesson>
 }
 
 export const Tutorial: React.FC<TutorialProps> = ({
-    lessonsList
+    lessonsData
 
-}) => {     
-     // lessons
-     const [lessonsData, setLessonsData] = useState<ILessonInfo[]>(
-        lessonsList.map((lesson)=>(
-            {
-                ...lesson, 
-                completed: false
-            }
-        )
-    ));
-    const [curLesson, setCurLesson] = useState(0); 
-    const Lesson = lessonsData[curLesson]?.lessonComponent;
+}) => {  
+    // lessons 
+    const [curLesson, setCurLesson] = usePersistentState<number>('curlesson', 0);    
+    const [lessonsCompleted, setLessonsCompleted] = usePersistentState<boolean[]>(
+        'lessonsCompleted', 
+        lessonsData.map(() =>{
+            return false;
+        })
+    );    
+    const Lesson = lessonsData[curLesson]?.lessonComponent;   
+    
+    // video     
+    const videoElement = useRef<HTMLVideoElement>(null);
+    const [videoShouldPlay, setVideoPlayState] = useState(false);
+    const [curLessonVideo, setCurLessonVideo] = useState<ILesson>(lessonsData[curLesson]); 
+    
+    const playVideoModal = () => {   
+        // which video lesson to play
+        const nextLesson = curLesson < lessonsData.length - 1 ? curLesson + 1 : curLesson;        
+        if (lessonsCompleted[nextLesson]){
+            setCurLessonVideo(lessonsData[curLesson]);
+        }else{
+            // what is the next lesson
+            setCurLessonVideo(lessonsData[curLesson !== 0 ? nextLesson : 0]);            
+            setCurLesson(nextLesson);
+        }    
+        // show modal and play lesson video 
+        setVideoPlayState (true); 
+    }    
 
-    // tutorial
-    const gotoNextLesson = () => {        
-        //let updatedInfo = [...lessonsInfo]; 
-        //updatedInfo[curLesson].completed = true; 
-        //setLessonsInfo(updatedInfo);            
-        //setCurLesson(curLesson < lessons.length - 1 ? curLesson + 1 : curLesson) 
-        //setCurLesson(curLesson < lessonsList.length - 1 ? curLesson + 1 : curLesson) 
-        playVideo (true)
-    } 
-
-    const gotoLesson = (idx: number) => {        
-        setCurLesson(idx) 
-    }
-
-     // video
-     const videoSrc = 'https://video.wixstatic.com/video/7e1c61_5268b1a0437545c1bfd4922fbf4c7e97/720p/mp4/file.mp4';
-     const videoElement = useRef<HTMLVideoElement>(null);
-     const [videoPlaying, playVideo] = useState(false);
-
-    const videoOnTimeUpdate = () => {        
-        if (videoPlaying && videoElement.current!.currentTime! >= lessonsData[curLesson].endTime - 0.016){
-            playVideo (false);
-            let updatedInfo = [...lessonsData]; 
-            updatedInfo[curLesson].completed = true; 
-            setLessonsData(updatedInfo);            
-            setCurLesson(curLesson < lessonsList.length - 1 ? curLesson + 1 : curLesson);
-        };
+    const onVideoEnded = () => { 
+        // hide modal and stop lesson video 
+        setVideoPlayState (false);        
+        // update  lessons progress
+        let updatedLessonsCompleted = [...lessonsCompleted]; 
+        updatedLessonsCompleted[curLesson] = true; 
+        setLessonsCompleted(updatedLessonsCompleted);
     };
     
-    useEffect(() => {  
-        videoElement.current!.currentTime = lessonsData[curLesson].startTime;       
-        videoPlaying
-        ? videoElement.current!.play()
-        : videoElement.current!.pause();
-    }, [videoPlaying, videoElement]);
+    useEffect(() => {   
+        videoShouldPlay ? videoElement.current!.play() : videoElement.current!.pause();
+    }, [videoShouldPlay, videoElement]);
     
     return (        
         <div className = {styles.wrapper}>
-            <div className={styles.modal} style={{ display: videoPlaying ? 'flex' : 'none'}}>
-                <video className={styles.foo1}                   
+            <div className={styles.modal} style={{ display: videoShouldPlay ? 'flex' : 'none'}}>
+                <video                   
+                    controls = {true}
                     preload = {'auto'}
-                    poster = {videoPoster}
-                    src={videoSrc}
+                    poster = {curLessonVideo.videoPoster}
+                    src={curLessonVideo.videoSrc}
                     ref={videoElement}
-                    onTimeUpdate={videoOnTimeUpdate}
+                    onEnded={onVideoEnded}
                 />
-                <span className={styles.foo2}/>
+                <span/>
             </div>
             <Lesson/> 
             <div className = {styles.controls}>                
-                <LessonNextButton
-                    gotoNextLesson={gotoNextLesson}
+                <LessonVideoPlayButton
+                    playVideoModal = {playVideoModal}
                 />
                 <LessonProgressIndicator 
-                    lessonsInfo={lessonsData} 
-                    curLesson={curLesson} 
-                    gotoLesson={gotoLesson}
+                    setCurLesson = {setCurLesson}
+                    lessonsData = {lessonsData} 
+                    lessonsCompleted = {lessonsCompleted}
+                    curLesson = {curLesson}                    
                 />
             </div>
         </div>
     )
 };
-
-
-/*const videoPause = () => {
-        setVideoPlayerState({
-            ...videoPlayerState,
-            isPlaying: false,
-        });
-    };
-
-    const videoPlay = () => {
-        /*setVideoPlayerState({
-            ...videoPlayerState,
-            isPlaying: true,
-        });
-    };
-    const videoGotoTime = () => {
-        const progress = (videoElement.current.currentTime / videoElement.current.duration) * 100;
-        setPlayerState({
-            ...playerState,
-            progress,
-        });
-    };*/

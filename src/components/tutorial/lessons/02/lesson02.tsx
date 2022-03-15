@@ -8,7 +8,7 @@ export interface Lesson02Props {
 export const Lesson02: React.FC<Lesson02Props> = ({ }) => {
     return (
         <div className={styles.content}>
-            <h1>Lesson Two</h1>
+            <h1>Lesson 2</h1>
         </div>
     )
 };

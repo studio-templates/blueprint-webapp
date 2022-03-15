@@ -5,17 +5,16 @@ import { lessonsList } from '../../../src/components/tutorial/lessons/lessonsLis
 
 export default createBoard({
     name: 'WCS Tutorial',
-    Board: () => <Tutorial lessonsList={lessonsList} />,
+    Board: () => <Tutorial lessonsData={lessonsList} />,
     environmentProps: {
         windowWidth: 1000,
-        windowHeight: 690,
+        windowHeight: 692,
         canvasWidth: 1000,
         canvasHeight: 690,
         canvasMargin: {
-            top: 1,
-            left: 1,
-            bottom: 1,
-            right: 1
+            right: 0,
+            left: 0,
+            bottom: 0,
         }
     }
 });

@@ -1,17 +1,19 @@
 import React from 'react';
-import { ILessonInfo } from "../../lessons/types";
+import { ILesson } from "../../helpers/types";
 import styles from './lesson-progress-indicator.module.scss'
 
 export interface LessonProgressIndicatorProps {    
-    gotoLesson?(idx: number): void;
-    lessonsInfo?: ILessonInfo[];    
-    curLesson?: number
+    setCurLesson(idx: number): void;
+    lessonsData: ILesson[];    
+    lessonsCompleted: boolean[];
+    curLesson: number
 }
 
 export const LessonProgressIndicator: React.FC<LessonProgressIndicatorProps> = ({
-    gotoLesson = ()=>{},
-    lessonsInfo = [],
-    curLesson = 0
+    setCurLesson,
+    lessonsData,
+    lessonsCompleted,
+    curLesson
 
 }) => {  
 
@@ -23,16 +25,16 @@ export const LessonProgressIndicator: React.FC<LessonProgressIndicatorProps> = (
     
     return (
         <div className={styles.wrapper}>
-            {lessonsInfo.length ?
-                lessonsInfo.map((lesson, idx) => (
+            {lessonsData.length ?
+                lessonsData.map((lesson, idx) => (
                     idx !== 0 ? 
                         <div 
                             key={idx} 
-                            className={styles['step-item'] + ' ' + styles[getClassName(idx, curLesson, lesson.completed)]}
+                            className={styles['step-item'] + ' ' + styles[getClassName(idx, curLesson, lessonsCompleted[idx])]}
                         >                        
                             <button className={styles.btn}
-                                disabled={!( lesson.completed && (idx !== curLesson))} 
-                                onClick={() => gotoLesson(idx)}
+                                disabled={!( lessonsCompleted[idx] && (idx !== curLesson))} 
+                                onClick={() => setCurLesson(idx)}
                             >{idx}</button>
                         </div> : null
                 )) : null

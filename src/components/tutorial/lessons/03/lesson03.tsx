@@ -5,7 +5,7 @@ export interface Lesson03Props {
     classNme?: string;
 }
 
-export const Lesson03: React.FC<Lesson03Props> = ({}) => {
+export const Lesson03: React.FC<Lesson03Props> = ({ }) => {
     return (
         <div className={styles.content}>
             <h1>Lesson Three</h1>
