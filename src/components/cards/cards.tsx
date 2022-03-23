@@ -5,7 +5,6 @@ import { SwitchComposite } from "../switch-composite/switch-composite";
 import { Card } from "../card/card";
 import { Divider } from "../divider/divider";
 import { CreditCard, CardInfo } from "../credit-card/credit-card";
-import { Weeklypayments } from '../weeklypayments/weeklypayments';
 
 
 export interface CardsProps {
