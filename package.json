@@ -2,21 +2,21 @@
   "name": "blueprint-webapp",
   "version": "0.1.0",
   "dependencies": {
-    "@blueprintjs/core": "^3.52.0",
-    "@blueprintjs/icons": "^3.31.0",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
+    "@blueprintjs/core": "^4.0.2",
+    "@blueprintjs/icons": "^4.1.0",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^14.0.0",
     "@types/jest": "^27.4.1",
     "@types/node": "16",
-    "@types/react": "^17.0.42",
+    "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
     "node-sass": "^7.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^5.0.0",
     "sass-loader": "^12.6.0",
-    "typescript": "~4.6.2",
+    "typescript": "~4.6.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -44,10 +44,10 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.16.0",
-    "@typescript-eslint/parser": "^5.16.0",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
     "@wixc3/react-board": "^1.1.1",
-    "eslint": "^8.11.0",
+    "eslint": "^8.12.0",
     "eslint-plugin-react": "^7.29.4"
   }
 }
