@@ -5,7 +5,6 @@ import { SwitchComposite } from "../switch-composite/switch-composite";
 import { Card } from "../card/card";
 import { Divider } from "../divider/divider";
 import { CreditCard, CardInfo } from "../credit-card/credit-card";
-import { Weeklypayment } from '../weeklypayment/weeklypayment';
 
 export interface CardsProps {
     className?: string;
@@ -32,7 +31,7 @@ export const Cards: React.FC<CardsProps> = ({
                         /></div>
                     <Divider color="E8E8E8" className={styles.divider}></Divider>
                     <div className={styles["right"]}>
-                        <Statistics price={balancePrice} type="income" />
+                        <Statistics price={balancePrice} type="balance" />
                         <Statistics price={incomePrice} type="income" />
                         <Statistics price={outcomePrice} type="outcome" />
                         <SwitchComposite />
