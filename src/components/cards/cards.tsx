@@ -38,8 +38,7 @@ export const Cards: React.FC<CardsProps> = ({
                         <Statistics price={incomePrice} type="income" />
                         <Statistics price={outcomePrice} type="outcome" />
                         <SwitchComposite />
-                    </div>
-                </div>
+                    </div></div>
             </Card>
         </div>
     );
