@@ -36,9 +36,7 @@ export const Cards: React.FC<CardsProps> = ({
                     <div className={styles["right"]}>
                         <Statistics price={balancePrice} type="balance" />
                         <Statistics price={incomePrice} type="income" />
-                        <Statistics price={outcomePrice} type="outcome" />
-                        <SwitchComposite />
-                    </div></div>
+                        <Statistics price={outcomePrice} type="outcome" /></div></div>
             </Card>
         </div>
     );
