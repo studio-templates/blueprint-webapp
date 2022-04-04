@@ -4,7 +4,7 @@ import { Cards } from '../../../components/cards/cards';
 
 export default createBoard({
     name: 'Premium Card',
-    Board: () => <Cards incomePrice={1500.55} outcomePrice={350} balancePrice={2801} cardInfo={{
+    Board: () => <Cards incomePrice={1500.55} outcomePrice={350} balancePrice={2800} cardInfo={{
         cardHolder: 'Assaf Yonai',
         company: 'Spotify',
         expiryDate: '06/23',
