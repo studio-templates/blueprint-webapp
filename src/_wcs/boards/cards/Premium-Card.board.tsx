@@ -4,7 +4,7 @@ import { Cards } from '../../../components/cards/cards';
 
 export default createBoard({
     name: 'Premium Card',
-    Board: () => <Cards incomePrice={1500.55} outcomePrice={350} balancePrice={2800} cardInfo={{
+    Board: () => <Cards incomePrice={150.55} outcomePrice={351} balancePrice={2800} cardInfo={{
         cardHolder: 'Assaf Yonai',
         company: 'Spotify',
         expiryDate: '06/23',
@@ -15,6 +15,6 @@ export default createBoard({
         canvasWidth: 597,
         windowWidth: 926,
         canvasBackgroundColor: '#ffffff',
-        windowHeight: 434
+        windowHeight: 651
     }
 });
