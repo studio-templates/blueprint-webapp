@@ -22,6 +22,7 @@ export interface CardsProps {
     incomePrice?: number;
     outcomePrice?: number;
     cardInfo: CardInfo;
+    hideTitle?: boolean;
 }
 
 export const Cards: React.FC<CardsProps> = ({
@@ -29,16 +30,18 @@ export const Cards: React.FC<CardsProps> = ({
     incomePrice,
     balancePrice,
     cardInfo,
+    hideTitle
 }) => {
     const statisticsData = createStatisticsData([balancePrice, incomePrice, outcomePrice])
     return (
         <div className={styles.root}>
             <Card className={styles.outline}>
-                <p className={styles.title}>Cards</p>
+                {!hideTitle && <p className={styles.title}>Cards</p>}
                 <div className={`${styles.layout} ${styles.content}`}>
                     <CardsContent 
                         leftSideRender={<CreditCard cardInfo={cardInfo}/>} 
-                        rightSideRender={<><StatisticsComp data={statisticsData}/><SwitchComposite /></>}>
+                        rightSideRender={<StatisticsComp data={statisticsData}/>}>
+                        <SwitchComposite />
                     </CardsContent>
                 </div>
             </Card>

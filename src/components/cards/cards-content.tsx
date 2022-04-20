@@ -4,11 +4,11 @@ import styles from "./cards.module.scss";
 import { Divider } from "../divider/divider";
 
 export interface CardsContentProps {
-    leftSideRender: React.ReactNode;
-    rightSideRender: React.ReactNode;
+    leftSideRender?: React.ReactNode;
+    rightSideRender?: React.ReactNode;
 }
 
-export const CardsContent: React.FC<CardsContentProps> = ({leftSideRender, rightSideRender}) => {
+export const CardsContent: React.FC<CardsContentProps> = ({leftSideRender, rightSideRender, children}) => {
     return (
         <div className={`${styles.layout} ${styles.content}`}>
             <>
@@ -18,6 +18,7 @@ export const CardsContent: React.FC<CardsContentProps> = ({leftSideRender, right
                 <Divider color="E8E8E8" className={styles.divider}></Divider>
                 <div className={styles["right"]}>
                     {rightSideRender}
+                    {children}
                 </div>
             </>
         </div>
