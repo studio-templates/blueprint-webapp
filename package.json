@@ -2,8 +2,8 @@
   "name": "blueprint-webapp",
   "version": "0.1.0",
   "dependencies": {
-    "@blueprintjs/core": "^4.2.0",
-    "@blueprintjs/icons": "^4.2.3",
+    "@blueprintjs/core": "^4.2.1",
+    "@blueprintjs/icons": "^4.2.4",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^14.1.0",
@@ -44,10 +44,10 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.19.0",
-    "@typescript-eslint/parser": "^5.19.0",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
     "@wixc3/react-board": "^1.1.1",
-    "eslint": "^8.13.0",
+    "eslint": "^8.14.0",
     "eslint-plugin-react": "^7.29.4"
   }
 }
