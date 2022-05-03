@@ -1,0 +1,15 @@
+@import '../../theme/colors.module.scss';
+
+.root {
+    margin-top: 3px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.title {
+    color: $light-grey;
+}
