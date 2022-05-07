@@ -1,0 +1,13 @@
+@import '../../theme/colors.module.scss';
+
+.root {}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.title {
+    color: $light-grey;
+}
