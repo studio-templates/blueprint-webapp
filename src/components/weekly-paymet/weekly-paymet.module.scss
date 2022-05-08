@@ -1,0 +1,14 @@
+@import '../../theme/colors.module.scss';
+
+.root {
+    padding-top: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    color: $light-grey;
+}
