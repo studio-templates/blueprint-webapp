@@ -24,7 +24,7 @@ export const Cards: React.FC<CardsProps> = ({
     return (
         <div className={styles.root}>
             <Card className={styles.outline}>
-                <p className={styles.title}>Omer</p>
+                <p className={styles.title}>Mika</p>
                 <div className={`${styles.layout} ${styles.content}`}>
                     <div className={styles["left"]}>
                         <CreditCard
