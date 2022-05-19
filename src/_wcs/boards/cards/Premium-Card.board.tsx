@@ -6,14 +6,14 @@ export default createBoard({
     name: 'Premium Card',
     Board: () => <Cards incomePrice={1500.55} outcomePrice={350} balancePrice={232} cardInfo={{
         cardHolder: 'Omer Kenet ',
-        company: 'Wix',
+        company: 'Spotify',
         expiryDate: '06/23',
         premium: true
     }} />,
     environmentProps: {
         canvasHeight: 364,
         canvasWidth: 597,
-        windowWidth: 970,
+        windowWidth: 934,
         canvasBackgroundColor: '#ffffff',
         windowHeight: 815
     }
