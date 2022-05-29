@@ -3,7 +3,7 @@ import { createBoard } from '@wixc3/react-board';
 import { Cards } from '../../../components/cards/cards';
 
 export default createBoard({
-    name: 'Premium Card',
+    name: 'Premium Card - Mobile',
     Board: () => <Cards incomePrice={1500.55} outcomePrice={350} balancePrice={232} cardInfo={{
         cardHolder: 'Omer Kenet ',
         company: 'Duda',
@@ -13,8 +13,8 @@ export default createBoard({
     environmentProps: {
         canvasHeight: 364,
         canvasWidth: 635,
-        windowWidth: 726,
+        windowWidth: 375,
         canvasBackgroundColor: '#ffffff',
-        windowHeight: 815
+        windowHeight: 812
     }
 });
