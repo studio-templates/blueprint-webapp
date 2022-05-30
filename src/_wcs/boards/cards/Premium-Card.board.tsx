@@ -12,9 +12,9 @@ export default createBoard({
     }} />,
     environmentProps: {
         canvasHeight: 364,
-        canvasWidth: 635,
-        windowWidth: 726,
+        canvasWidth: 649,
+        windowWidth: 828,
         canvasBackgroundColor: '#ffffff',
-        windowHeight: 815
+        windowHeight: 617
     }
 });
