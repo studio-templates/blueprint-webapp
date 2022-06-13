@@ -19,6 +19,7 @@
     flex-direction: row;
     align-items: center;
     gap: 5px;
+    color: $red;
 }
 
 .description {
@@ -35,15 +36,19 @@
 
 .balance .header {
     color: $dark-green;
-    font-size: 18px;
+    font-size: 32px;
 }
 
 .income .header {
-    color: $dark-blue;
+    color: $orange;
     font-size: 18px;
 }
 
 .outcome .header {
     color: $red;
     font-size: 18px;
+}
+
+.talmi2 {
+    color: $orange;
 }

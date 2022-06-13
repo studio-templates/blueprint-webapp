@@ -25,6 +25,8 @@
     position: relative;
     height: 90%;
     width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .creditCard {
@@ -52,4 +54,8 @@
     line-height: 25px;
     font-weight: 600;
     color: #404040;
+}
+
+.talmi {
+    color: $yellow;
 }
