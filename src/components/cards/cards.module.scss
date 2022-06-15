@@ -5,6 +5,12 @@
     font-family: Poppins;
 }
 
+@media only screen and (max-width: 600px) {
+    .root {
+        background-color: #168E78;
+    }
+}
+
 .right {
     display: flex;
     height: 90%;
@@ -25,6 +31,8 @@
     position: relative;
     height: 90%;
     width: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .creditCard {
