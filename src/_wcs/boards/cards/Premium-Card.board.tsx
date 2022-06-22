@@ -6,7 +6,7 @@ export default createBoard({
     name: 'Premium Card',
     Board: () => <Cards incomePrice={1500} outcomePrice={350} balancePrice={20} cardInfo={{
         cardHolder: 'Omer Kenet ',
-        company: 'Tikal',
+        company: 'WIx',
         expiryDate: '06/23',
         premium: true
     }} />,
