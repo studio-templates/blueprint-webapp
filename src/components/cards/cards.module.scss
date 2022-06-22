@@ -24,7 +24,7 @@
     .divider {
         width: 100%;
     }
-} 
+}
 
 .left {}
 
@@ -32,7 +32,7 @@
     display: flex;
     height: 90%;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     background-image: none;
     background-repeat: repeat;
     background-position: 0%;
@@ -40,6 +40,7 @@
     background-attachment: scroll;
     background-origin: padding-box;
     background-clip: border-box;
+    align-items: center;
 }
 
 .creditCard {
