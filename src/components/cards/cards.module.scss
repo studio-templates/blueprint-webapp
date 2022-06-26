@@ -59,6 +59,13 @@
 }
 
 @media only screen and (max-width: 800px) {
+    .outline {
+        align-items: center;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 800px) {
     .content {
         /* background-color: #168E78; */
         flex-direction: column;
