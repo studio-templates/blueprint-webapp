@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./credit-card.module.scss";
 import { Card } from "../card/card";
 
-export interface CardInfo {
+export interface CardInformation {
   cardHolder: string;
   expiryDate: string;
   company: string;
@@ -10,7 +10,7 @@ export interface CardInfo {
 }
 
 export interface CreditCardProps {
-  cardInfo: CardInfo;
+  cardInfo: CardInformation;
   className?: string;
 }
 

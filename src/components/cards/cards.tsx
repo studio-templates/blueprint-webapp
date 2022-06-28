@@ -4,14 +4,14 @@ import { Statistics } from "../statistics/statistics";
 import { SwitchComposite } from "../switch-composite/switch-composite";
 import { Card } from "../card/card";
 import { Divider } from "../divider/divider";
-import { CreditCard, CardInfo } from "../credit-card/credit-card";
+import { CreditCard, CardInformation } from "../credit-card/credit-card";
 
 export interface CardsProps {
     className?: string;
     balancePrice?: number;
     incomePrice?: number;
     outcomePrice?: number;
-    cardInfo: CardInfo;
+    cardInfo: CardInformation;
 }
 
 export const Cards: React.FC<CardsProps> = ({

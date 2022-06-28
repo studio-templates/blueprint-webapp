@@ -5,14 +5,14 @@ import { Cards } from '../../../components/cards/cards';
 export default createBoard({
     name: 'Premium Card',
     Board: () => <Cards incomePrice={1500} outcomePrice={350} balancePrice={20} cardInfo={{
-        cardHolder: 'Omer Kenet',
-        company: 'WIx',
+        cardHolder: 'Erez Shasha',
+        company: 'Spotify',
         expiryDate: '06/23',
         premium: true
     }} />,
     environmentProps: {
-        windowWidth: 897,
+        windowWidth: 815,
         canvasBackgroundColor: '#ffffff',
-        windowHeight: 635
+        windowHeight: 599
     }
 });
