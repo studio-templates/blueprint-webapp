@@ -11,8 +11,8 @@ export default createBoard({
         premium: false
     }} />,
     environmentProps: {
-        windowWidth: 414,
+        windowWidth: 444,
         canvasBackgroundColor: '#ffffff',
-        windowHeight: 896
+        windowHeight: 772
     }
 });
