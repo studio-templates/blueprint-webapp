@@ -8,7 +8,7 @@ export default createBoard({
         cardHolder: 'Omer Kenet ',
         company: 'Wix',
         expiryDate: '06/23',
-        premium: true
+        premium: false
     }} />,
     environmentProps: {
         windowWidth: 414,

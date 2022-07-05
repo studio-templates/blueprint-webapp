@@ -12,6 +12,16 @@
     position: relative;
 }
 
+.cardPremium {
+    width: 320px;
+    height: 205px;
+    border-radius: 26px;
+    background: linear-gradient(180deg, #BBA14F 0%, #EEB52D 100%);
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+}
+
 .heading {
     height: auto;
     margin-bottom: 45px;
@@ -80,6 +90,16 @@
     height: 100px;
     border-radius: 50%;
     background: #61aadd;
+    overflow: hidden;
+}
+
+.circlePremium {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #E3B957;
     overflow: hidden;
 }
 

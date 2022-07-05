@@ -20,11 +20,11 @@ export const CreditCard: React.FC<CreditCardProps> = ({
 }) => {
   return (
     <div className={`${styles.root} ${className}`}>
-      <Card className={styles.card} elevation={2}>
+      <Card className={premium ? styles.cardPremium : styles.card} elevation={2}>
         <div className={styles.circles}>
-          <div className={`${styles.circle} ${styles.circleFirst}`}></div>
-          <div className={`${styles.circle} ${styles.circleSecond}`}></div>
-          <div className={`${styles.circle} ${styles.circleThird}`}></div>
+          <div className={(premium ? styles.circlePremium : styles.circle) + " " + styles.circleFirst}></div>
+          <div className={(premium ? styles.circlePremium : styles.circle) + " " + styles.circleSecond}></div>
+          <div className={(premium ? styles.circlePremium : styles.circle) + " " + styles.circleThird}></div>
         </div>
         <div className={styles.heading}>
           <h4 className={styles.companyTitle}>{company}</h4>
