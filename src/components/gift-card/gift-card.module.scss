@@ -1,68 +1,103 @@
 // google fonts
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Nunito+Sans:wght@200&family=Playfair+Display&display=swap');
+
 // Styles
 .card {
     display: flex;
+    flex-direction: column;  
+    background-color: #fcbcb2;  
+    border-radius: 24px;
+    overflow: hidden;
+    min-width: 280px;
+    width: 320px;        
+    padding: 0;
+}
+
+.card-body {         
+    display: flex;
     flex-direction: column;
-    background-color: #d8b6b6;
-    
-
-    &.wrapper{   
-        border-radius: 24px;
-        overflow: hidden;
-        min-width: 280px;
-        width: 320px;        
-        padding: 0;
-    }
-    
-    &.body {         
-        padding: 1.5rem; 
-        box-shadow: none; 
-    }
-
-    &.promo {         
-        flex-direction: row; 
-        justify-content: space-between; 
-        align-items: center;
-        box-shadow: none;        
-        margin-top: 1rem;
-        padding: 0;
-    }
-
-    img{
-        width: 100%;
-        height: 100%; 
-        object-position: top;
-        object-fit: cover;
-        max-height: 220px; 
-        flex-basis: 100px;
-    }
+    padding: 1.5rem; 
 }
 
-.typo {    
+.card-body .promo{ 
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: none;        
+    margin-top: 1rem;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    height: 100%; 
+    object-position: top;
+    object-fit: cover;
+    max-height: 220px; 
+    flex-basis: 100px;
+}
+
+.title, .desc, .email, .price {
+    font-family: 'Libre Baskerville', serif;
+    text-align: justify;
     margin-bottom: 1rem;
-    
-    &.title{
-        font-family: 'Playfair Display',  serif;
-        color: rgb(78, 44, 44); 
-    }
-
-    &.desc{
-        font-family: 'Nunito Sans', sans-serif;
-        text-align: justify;
-        color: rgba(78, 44, 44, 0.5); 
-    }
-
-    &.promo{
-        font-family: 'Libre Baskerville', serif;
-        color: rgb(61, 19, 19); 
-
-        &.email{            
-            color: rgba(61, 19, 19, 0.5); 
-        }
-    }
 }
 
+.title, .price {
+    color: rgb(78, 44, 44); 
+}
 
+.desc, .email {
+    color: rgba(78, 44, 44, 0.8); 
+}
 
+.title{
+    font-family: 'Playfair Display',  serif; 
+}
 
+.desc{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.card.full{
+    display: grid;
+} 
+
+.card.full:before, .card.full>* {
+    grid-column-start: 1;
+    grid-row-start: 1
+}
+
+.card.full:before {   
+    content: "";
+    background-color: #161616;
+    z-index: 1;
+    opacity: 0.75;
+}
+
+.card.full .card-body{
+    margin-top: 2rem;
+    z-index: 2;
+} 
+
+.card.full .promo{
+    margin-top: 12rem;
+} 
+
+.card.full img{   
+    max-height: 100%; 
+    flex-basis: auto;
+} 
+
+.card.full .title, .card.full .price {
+    color: #fcbcb2; 
+}
+
+.card.full .desc{
+    margin-top: 1rem;
+}
+
+.card.full .desc, .card.full .email {
+    color: #eeeeeeaf;
+}
