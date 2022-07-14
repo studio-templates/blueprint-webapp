@@ -4,15 +4,15 @@ import { Cards } from '../../../components/cards/cards';
 
 export default createBoard({
     name: 'Standard Card',
-    Board: () => <Cards incomePrice={1500} outcomePrice={350} balancePrice={28} cardInfo={{
-        cardHolder: 'Omer',
-        company: 'Wix',
-        expiryDate: '06/25',
+    Board: () => <Cards incomePrice={1500} outcomePrice={350} balancePrice={2800} cardInfo={{
+        cardHolder: 'Jeff Lebowski',
+        company: 'Wix.com',
+        expiryDate: '04/20',
     }} />,
     environmentProps: {
-        canvasHeight: 364,
-        canvasWidth: 597,
-        windowWidth: 938,
+        canvasHeight: 360,
+        canvasWidth: 600,
+        windowWidth: 1420,
         canvasBackgroundColor: '#ffffff',
     }
 });
