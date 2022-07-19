@@ -10,6 +10,6 @@ module.exports = {
       },
     },
     cssCompilation: {
-      cssModulesExt: ['.module.scss']
+      cssModulesExt: [".module.scss"]
     }
 };
