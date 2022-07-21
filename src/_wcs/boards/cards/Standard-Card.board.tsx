@@ -5,14 +5,14 @@ import { Cards } from '../../../components/cards/cards';
 export default createBoard({
     name: 'Standard Card',
     Board: () => <Cards incomePrice={1500.55} outcomePrice={350.65} balancePrice={2850.75} cardInfo={{
-        cardHolder: 'John Marthon',
+        cardHolder: 'Anat Fennig',
         company: 'Wix',
         expiryDate: '06/25',
     }} />,
     environmentProps: {
         canvasHeight: 364,
-        canvasWidth: 597,
-        windowWidth: 926,
+        canvasWidth: 607,
+        windowWidth: 978,
         canvasBackgroundColor: '#ffffff',
     }
 });
