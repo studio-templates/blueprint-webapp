@@ -5,7 +5,7 @@ import itemPhoto from '../../../src/components/product-item/assets/matcha-tea.pn
 
 export default createBoard({
     name: 'Matcha Tea  - Favorite',
-    Board: () => <ProductItem isFavorite={true} itemName='Matche Tea' itemPhotoURL={itemPhoto} itemPrice={9.99} itemDescription='240 calories, 32g sugar, 7g fat.' />,
+    Board: () => <ProductItem isFavorite={true} itemName='Matcha Tea' itemPhotoURL={itemPhoto} itemPrice={9.99} itemDescription='240 calories, 32g sugar, 7g fat.' />,
     environmentProps: {
         windowWidth: 600,
         windowHeight: 800,

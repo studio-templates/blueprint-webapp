@@ -23,7 +23,7 @@ export const ProductItem: React.FC<ProductItemProps> = ({
     itemPhotoURL = defaultItemPhoto,
     itemName = 'Peppermint Mocha',
     itemPrice = 18.0,
-    itemDescription = 'A holiday classic, Espresso Roast combines with steamed milk, sweet mocha sauce and peppermint-flavored syrup, topped with whipped cream.',
+    itemDescription = 'An espresso roast combined with steamed milk, sweet mocha sauce and peppermint-flavored syrup, topped with whipped cream.',
     isFavorite = false
 
 }) => {

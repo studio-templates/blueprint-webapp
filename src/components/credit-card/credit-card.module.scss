@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.root {
+    overflow: hidden;
+}
+
+.card {
+    width: 320px;
+    height: 205px;
+    border-radius: 26px;
+    background: linear-gradient(180deg, #3182c2 0%, #3993c6 100%);
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+}
+
+.cardPremium {
+    width: 320px;
+    height: 205px;
+    border-radius: 26px;
+    background: linear-gradient(180deg, #BBA14F 0%, #EEB52D 100%);
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+}
+
+.heading {
+    height: auto;
+    margin-bottom: 45px;
+}
+
+.fontQuicksand {
+    font-family: "Quicksand", sans-serif;
+}
+
+.fontBold {
+    font-weight: 700;
+}
+
+.companyTitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.premium {
+    font-size: 9px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(16, 16, 16, 0.85);
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.cardNumber {
+    position: relative;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.cardNumberContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+}
+
+.footerItemTitle {
+    font-weight: 400;
+    display: block;
+    font-size: 9px;
+    margin: 0px;
+}
+
+.footerItem {
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 45px;
+    margin-top: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.circle {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #61aadd;
+    overflow: hidden;
+}
+
+.circlePremium {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #E3B957;
+    overflow: hidden;
+}
+
+.circles {
+    position: absolute;
+    top: 120%;
+    right: 58px;
+}
+
+.circleFirst {
+    width: 150px;
+    height: 150px;
+    right: -110px;
+    bottom: -10px;
+}
+
+.circleSecond {
+    right: 20px;
+    z-index: 0;
+    bottom: 20px;
+}
+
+.circleThird {
+    bottom: 85px;
+    right: -40px;
+}
