@@ -5,7 +5,7 @@ import photoURL from '../../../src/components/gift-card/assets/img-2.jpg';
 import styles from './gift-card.board.module.scss';
 
 export default createBoard({
-    name: 'gift card panel',
+    name: 'Gift Card',
     Board: () => <div className={styles.grid2col}>
         <GiftCard photoURL={photoURL}/>
         <GiftCard photoURL={photoURL} full  />

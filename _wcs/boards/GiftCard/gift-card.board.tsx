@@ -4,7 +4,7 @@ import { GiftCard } from '../../../src/components/gift-card/gift-card';
 import styles from './gift-card.board.module.scss';
 
 export default createBoard({
-    name: 'gift card panel',
+    name: 'Gift Card',
     Board: () => <div className={styles.grid2col}>
                     <GiftCard/>
                     <GiftCard full/>
