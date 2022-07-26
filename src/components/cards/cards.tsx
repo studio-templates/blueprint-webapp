@@ -7,6 +7,7 @@ import { Divider } from "../divider/divider";
 import { CreditCard, CardInformation } from "../credit-card/credit-card";
 import { WeeklyPayments } from '../weekly-payments/weekly-payments';
 import { NewComponent2 } from '../new-component-2/new-component-2';
+import { WeeklySummary } from '../weekly-summary/weekly-summary';
 
 export interface CardsProps {
     className?: string;
@@ -30,7 +31,9 @@ export const Cards: React.FC<CardsProps> = ({
                     <div className={styles["left"]}>
                         <CreditCard
                             cardInfo={cardInfo}
-                        ></CreditCard></div>      <Divider color="E8E8E8" className={styles.divider}></Divider>
+                        ></CreditCard>
+                        <WeeklySummary />
+                    </div>      <Divider color="E8E8E8" className={styles.divider}></Divider>
                     <div className={styles["right"]}>
                         <Statistics price={balancePrice} type="balance" />
                         <Statistics price={incomePrice} type="income" />
