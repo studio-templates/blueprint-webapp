@@ -3,8 +3,16 @@
 .root {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     color: #AEAEAE;
+    align-items: end;
+    text-align: end;
+}
+
+@media only screen and (max-width: 800px) {
+    .root {
+        flex-direction: column;
+        text-align: end;
+    }
 }
 
 .switch {}

@@ -3,16 +3,16 @@ import { createBoard } from '@wixc3/react-board';
 import { Cards } from '../../../components/cards/cards';
 
 export default createBoard({
-    name: 'Standard Card',
-    Board: () => <Cards incomePrice={1500} outcomePrice={350} balancePrice={28} cardInfo={{
-        cardHolder: 'Omer',
+    name: 'Mobile',
+    Board: () => <Cards incomePrice={1500} outcomePrice={350} balancePrice={20} cardInfo={{
+        cardHolder: 'Omer Kenet ',
         company: 'Wix',
-        expiryDate: '06/25',
+        expiryDate: '06/23',
+        premium: false
     }} />,
     environmentProps: {
-        canvasHeight: 364,
-        canvasWidth: 597,
-        windowWidth: 938,
+        windowWidth: 444,
         canvasBackgroundColor: '#ffffff',
+        windowHeight: 772
     }
 });
