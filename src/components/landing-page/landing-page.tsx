@@ -20,6 +20,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
     posterURL = 'https://static.wixstatic.com/media/68d3a9_d6f59c533b0e49cf8e44e6ff23ace28af000.jpg',
 }) => {
     const reverse = (str: string) => str.split('').reverse().join();
+    const A = [reverse('home sdfsdf fs'), <div></div>];
     return (
         <div className={styles.page}>
             <div className={styles.videoBG}>
@@ -27,7 +28,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                     <source src={videoURL} type="video/mp4" />
                 </video>
             </div>
-            {reverse('home sdfsdf fs')}
+            {A}
             <div className={styles.content}>
                 <div className={styles.cols}>
                     <img className={styles.logo} src={logoURL} />
