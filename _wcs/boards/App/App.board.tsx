@@ -5,7 +5,7 @@ import App from '../../../src/App';
 
 export default createBoard({
     name: 'App',
-    Board: () => <App />,
+    Board: () => <App title={<><div>mmm</div>, <div>asdasd</div></>} />,
     environmentProps: {
         windowWidth: 1030,
         windowHeight: 739,
