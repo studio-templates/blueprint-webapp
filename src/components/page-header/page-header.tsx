@@ -11,7 +11,7 @@ export interface PageHeaderProps {
 export const PageHeader: React.FC<PageHeaderProps> = ({ className }) => {
     return <div className={styles.root}>
         <div className={`${styles.headerContainer} ${styles.headerContainer} ${styles.moreSpecific}`}>
-            <div className={MembershipIndicator_module_scss.textContainer}>
+            <div>
                 <Text className={styles.pageHeader}>Weekly sumup</Text>
                 <Text className={styles.pageSubHeader}>
                     Get summary of your weekly online transactions here.
