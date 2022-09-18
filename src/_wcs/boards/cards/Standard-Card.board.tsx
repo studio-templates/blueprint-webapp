@@ -4,7 +4,7 @@ import { Cards } from '../../../components/cards/cards';
 
 export default createBoard({
     name: 'Standard Card',
-    Board: () => <Cards incomePrice={1500} outcomePrice={350} balancePrice={28} cardInfo={{
+    Board: () => <Cards incomePrice={1500} outcomePrice={350} balancePrice={2800} cardInfo={{
         cardHolder: 'Omer',
         company: 'Wix',
         expiryDate: '06/25',
