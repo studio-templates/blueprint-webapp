@@ -9,8 +9,8 @@
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.2.0",
     "@types/node": "16",
-    "@types/react": "^18.0.23",
-    "@types/react-dom": "^18.0.7",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -46,7 +46,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/parser": "^5.41.0",
-    "@wixc3/react-board": "^2.0.3",
+    "@wixc3/react-board": "^2.0.5",
     "eslint": "^8.26.0",
     "eslint-plugin-react": "^7.31.10"
   }
