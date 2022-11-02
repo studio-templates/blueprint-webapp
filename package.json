@@ -46,7 +46,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/parser": "^5.41.0",
-    "@wixc3/react-board": "^2.0.5",
+    "@wixc3/react-board": "^2.0.3",
     "eslint": "^8.26.0",
     "eslint-plugin-react": "^7.31.10"
   }
