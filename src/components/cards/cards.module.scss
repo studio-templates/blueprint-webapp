@@ -32,12 +32,9 @@
 .left {}
 
 .content {
-    display: flex;
     height: 90%;
     width: 100%;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
+    display: flex;
 }
 
 .creditCard {
