@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBoard } from '@wixc3/react-board';
 import { ProductItem } from '../../../src/components/product-item/product-item';
-import itemPhoto from '../../../src/components/product-item/assets/macchiato.png';
+import itemPhoto from '../../../src/components/product-item/assets/bottle1.png';
 
 export default createBoard({
     name: 'Macchiato',
